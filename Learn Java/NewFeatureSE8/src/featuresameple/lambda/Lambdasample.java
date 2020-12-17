@@ -3,6 +3,24 @@ package featuresameple.lambda;
 public class Lambdasample {
 
 	private static int percent = 100;
+	static int a;
+	int aa;
+	
+	void test() {
+		
+		int localVariable=100;
+		
+		// lambda in SE8 or later version
+		Functionlambdatest se8 = (percent) -> {
+			a=a+100;
+			aa=111;
+			aa=aa+localVariable;
+			return percent == 100 ? true : false;
+		};
+ 
+		boolean stateSe7=se8.test(222);
+		System.out.println("Result test: "+stateSe7);
+	}
 
 	public static void main(String[] args) {
 
@@ -14,17 +32,15 @@ public class Lambdasample {
 			}
 
 		};
-
-		// lambda in SE8 or later version
-		Functionlambdatest se8 = (percent) -> {
-			return percent == 100 ? true : false;
-		};
-		
+	
+		Lambdasample a= new Lambdasample();
+		a.test();
+	
 		boolean stateSe7=se7.test(percent);
-		boolean stateSe8=se8.test(percent);
+	 
 		
 		System.out.println("Result se7: "+stateSe7);
-		System.out.println("Result se8: "+stateSe8);
+		 
 	}
 }
 
