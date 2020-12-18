@@ -94,7 +94,7 @@ public class Streamapisample {
 	}
 	
 	static void optimized() {
-		Stream.of("d2", "a2", "b1", "b3", "c")
+		Stream.of("d2", "a2", "b1", "b3", "c", "a5")
 	    
 	    .filter(s -> {
 	        System.out.println("filter: " + s);
