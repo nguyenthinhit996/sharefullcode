@@ -27,6 +27,8 @@ public class StreamApiCollectors {
 		        new Personz("Pamela", 23),
 		        new Personz("David", 12));
 	
+	
+	 
 
 	void customCollectorAdvanced() {
 
@@ -177,16 +179,21 @@ public class StreamApiCollectors {
 
 class Personz {
     String name;
-    int age;
+    Integer age;
 
     Personz(String name, int age) {
         this.name = name;
         this.age = age;
     }
+    
+    Personz(String name) {
+        this.name = name;
+        this.age = null;
+    }
 
     @Override
     public String toString() {
-        return name+age;
+        return name +" "+age;
     }
 
 	public String getName() {
@@ -197,7 +204,7 @@ class Personz {
 		this.name = name;
 	}
 
-	public int getAge() {
+	public Integer getAge() {
 		return age;
 	}
 
@@ -205,7 +212,13 @@ class Personz {
 		this.age = age;
 	}
     
+	
+	void abc() {
+		System.out.println(this.age+111);
+	}
     
+	
+	 
 }
 
 class CollectersCustom implements Collector<Personz, List<String>, List<String>>{
