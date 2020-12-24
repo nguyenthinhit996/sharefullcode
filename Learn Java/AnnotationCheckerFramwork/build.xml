@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="CheckerFramwork" default="CheckerFramwork" basedir=".">
+
+	<!-- 1.0 config path enviroment for javac in checkerframwork -->
+	<property environment="env" />
+	<property name="checkerframework" value="${env.CHECKERFRAMEWORK}" />
+	<condition property="cfJavac" value="javac.bat" else="javac">
+		<os family="windows" />
+	</condition>
+
+	<!-- 2.0 pre set defination of tag -->
+	<property name="build.sysclasspath" value="last"/>
+	<presetdef name="jsr308.javac">
+		<javac fork="yes" executable="${checkerframework}\checker\bin\${cfJavac}">
+			<compilerarg value="-version" />
+			<compilerarg value="-implicit:class" />
+		</javac>
+	</presetdef>
+
+	<!-- 3.0 defaut run with ant run clean then run check-nullness -->
+	<target name="CheckerFramwork" depends="clean, check-nullness">
+		<echo>${checkerframework}</echo>
+	</target>
+
+	<target name="clean">
+		<delete dir="build" />
+	</target>
+
+	<!-- 4.0 compile check-nullness -->
+	<target name="check-nullness" description="Check for null pointer dereferences">
+		<buildnumber />
+		<!-- use jsr308.javac instead of javac -->
+		<mkdir dir="build/classes"/>
+		<jsr308.javac srcdir="." destdir="build/classes">
+			<!-- <compilerarg line="-processor org.checkerframework.checker.nullness.NullnessChecker" /> -->
+			<!-- optional, to not check uses of library methods:
+			        <compilerarg value="-AskipUses=^(java\.awt\.|javax\.swing\.)"/>
+			      -->
+			<compilerarg line="-processor org.checkerframework.checker.nullness.NullnessChecker" />
+			<compilerarg line="-Xmaxerrs 10000" />
+		</jsr308.javac>
+
+	</target>
+	 
+
+</project>
