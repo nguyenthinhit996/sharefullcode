@@ -9,7 +9,7 @@
 	</condition>
 
 	<!-- 2.0 pre set defination of tag -->
-	<property name="build.sysclasspath" value="last"/>
+	<property name="build.sysclasspath" value="last" />
 	<presetdef name="jsr308.javac">
 		<javac fork="yes" executable="${checkerframework}\checker\bin\${cfJavac}">
 			<compilerarg value="-version" />
@@ -30,7 +30,7 @@
 	<target name="check-nullness" description="Check for null pointer dereferences">
 		<buildnumber />
 		<!-- use jsr308.javac instead of javac -->
-		<mkdir dir="build/classes"/>
+		<mkdir dir="build/classes" />
 		<jsr308.javac srcdir="." destdir="build/classes">
 			<!-- <compilerarg line="-processor org.checkerframework.checker.nullness.NullnessChecker" /> -->
 			<!-- optional, to not check uses of library methods:
@@ -41,6 +41,35 @@
 		</jsr308.javac>
 
 	</target>
-	 
 
+
+	<target name="check-optional" description="Check for null pointer dereferences">
+		<buildnumber />
+		<!-- use jsr308.javac instead of javac -->
+		<mkdir dir="build/classes" />
+		<jsr308.javac srcdir="." destdir="build/classes">
+			<!-- <compilerarg line="-processor org.checkerframework.checker.optional.OptionalChecker" /> -->
+			<!-- optional, to not check uses of library methods:
+			        <compilerarg value="-AskipUses=^(java\.awt\.|javax\.swing\.)"/>
+			      -->
+			<compilerarg line="-processor org.checkerframework.checker.nullness.NullnessChecker" />
+			<compilerarg line="-Xmaxerrs 10000" />
+		</jsr308.javac>
+
+	</target>
+
+	<target name="check-Interned" description="Check for null pointer dereferences">
+		<buildnumber />
+		<!-- use jsr308.javac instead of javac -->
+		<mkdir dir="build/classes" />
+		<jsr308.javac srcdir="." destdir="build/classes">
+			<!-- <compilerarg line="-processor org.checkerframework.checker.interning.InterningChecker" /> -->
+			<!-- optional, to not check uses of library methods:
+				        <compilerarg value="-AskipUses=^(java\.awt\.|javax\.swing\.)"/>
+				      -->
+			<compilerarg line="-processor org.checkerframework.checker.nullness.NullnessChecker" />
+			<compilerarg line="-Xmaxerrs 10000" />
+		</jsr308.javac>
+
+	</target>
 </project>
