@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_271"/>
+	<classpathentry kind="lib" path="C:/Users/Laptop/Downloads/checker-framework-3.8.0(1)/checker-framework-3.8.0/checker/dist/checker.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Laptop/Downloads/checker-framework-3.8.0(1)/checker-framework-3.8.0/checker/dist/checker-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Laptop/Downloads/checker-framework-3.8.0(1)/checker-framework-3.8.0/checker/dist/checker-qual.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Laptop/Downloads/checker-framework-3.8.0(1)/checker-framework-3.8.0/checker/dist/checker-source.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Laptop/Downloads/checker-framework-3.8.0(1)/checker-framework-3.8.0/checker/dist/javac.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Laptop/Downloads/commons-lang3-3.11-bin/commons-lang3-3.11/commons-lang3-3.11.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/Laptop/Downloads/commons-lang3-3.11-bin/commons-lang3-3.11/apidocs/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

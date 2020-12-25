@@ -9,7 +9,7 @@ public class ParallelStreamSample {
 	public static void main(String[] args) {
 		// get pool on my computer
 		ForkJoinPool commonPool = ForkJoinPool.commonPool();
-		//System.out.println(commonPool.getParallelism());
+		System.out.println(commonPool.getParallelism());
 		
 		Arrays.asList("a1","b1","c1","d1","e1","r1").
 		parallelStream().filter(s ->{
