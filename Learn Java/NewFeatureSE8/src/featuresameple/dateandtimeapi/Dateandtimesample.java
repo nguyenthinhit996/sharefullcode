@@ -1,17 +1,21 @@
 package featuresameple.dateandtimeapi;
 
+import static java.time.temporal.TemporalAdjusters.lastDayOfMonth;
+import static java.time.temporal.TemporalAdjusters.previousOrSame;
+
+import java.time.Clock;
+import java.time.DayOfWeek;
+import java.time.Duration;
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
 import java.time.Period;
+import java.time.ZoneId;
+import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
-
-import static java.time.temporal.TemporalAdjusters.*;
-
-import java.time.DayOfWeek;
-import java.time.Duration;
 
 //doccument refer: https://www.oracle.com/technical-resources/articles/java/jf14-date-time.html
 
@@ -104,8 +108,18 @@ public class Dateandtimesample {
 		System.out.println(" Format: " +truncationDAYSEcond.toString());
 		
 	}
+	
+	void distanceTwoInstant()
+	{
+		Instant instant = Instant.now(Clock.system(ZoneId.of("GMT+9")));
+		System.out.println(instant.toString());   
+		LocalDateTime localDate =LocalDateTime.now();
+		System.out.println(localDate.toString());
+		
+		
+	}
 
-	void duration() {
+	void distanceTwoLocalDateTime () {
 		LocalDateTime localDate =LocalDateTime.now();
 		System.out.println("localDate: " + localDate.toLocalDate().toString());
 		LocalDateTime localDateTomorrow =LocalDateTime.now().plusDays(1);
@@ -127,6 +141,6 @@ public class Dateandtimesample {
 		// dateandtimesample.listing2();
 		//dateandtimesample.listing3();
 		//dateandtimesample.listing4();
-		dateandtimesample.duration();
+		dateandtimesample.distanceTwoInstant();
 	}
 }

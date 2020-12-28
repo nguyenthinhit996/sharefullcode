@@ -5,6 +5,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.BiFunction;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
@@ -113,5 +116,8 @@ public class Streamapisample {
 	
 	public static void main(String[] args) throws IOException {
 		optimized();
+		
+		 
+		 
 	}
 }

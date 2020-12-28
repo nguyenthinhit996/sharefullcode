@@ -2,24 +2,28 @@ package featuresameple.lambda;
 
 public class Lambdasample {
 
-	private static int percent = 100;
-	static int a;
-	int aa;
+	// Golbal static variable
+	static int golbalStaticVariable=444;
+	// Golbal variable 
+	private int golbalVarable=88;
+
+	
 	
 	void test() {
-		
+		// local variabe
 		int localVariable=100;
 		
 		// lambda in SE8 or later version
-		Functionlambdatest se8 = (percent) -> {
-			a=a+100;
-			aa=111;
-			aa=aa+localVariable;
-			return percent == 100 ? true : false;
+		Functionlambdatest se8 = () -> {
+			golbalStaticVariable=golbalStaticVariable+100;
+			golbalVarable=111;
+			golbalVarable=golbalVarable+localVariable;	
+			return golbalStaticVariable == 100 ? true : false;
 		};
- 
-		boolean stateSe7=se8.test(222);
-		System.out.println("Result test: "+stateSe7);
+		
+		 
+		boolean stateSe7=se8.test();
+		System.out.println("Result se8: "+stateSe7);
 	}
 
 	public static void main(String[] args) {
@@ -27,8 +31,8 @@ public class Lambdasample {
 		// function in SE7 or earlier version
 		Functionlambdatest se7 = new Functionlambdatest() {
 			@Override
-			public boolean test(int percent) {
-				return percent == 100 ? true : false;
+			public boolean test() {
+				return golbalStaticVariable == 100 ? true : false;
 			}
 
 		};
@@ -36,7 +40,7 @@ public class Lambdasample {
 		Lambdasample a= new Lambdasample();
 		a.test();
 	
-		boolean stateSe7=se7.test(percent);
+		boolean stateSe7=se7.test();
 	 
 		
 		System.out.println("Result se7: "+stateSe7);
@@ -45,5 +49,5 @@ public class Lambdasample {
 }
 
 interface Functionlambdatest {
-	public boolean test(int percent);
+	public boolean test();
 }
