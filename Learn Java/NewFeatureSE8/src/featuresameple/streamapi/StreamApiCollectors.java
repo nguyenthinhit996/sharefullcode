@@ -99,7 +99,7 @@ public class StreamApiCollectors {
 	}
 
 	
-	void streamToMapUserToMapFullOption() {
+	public void streamToMapUserToMapFullOption() {
 		
 		List<String> duplicateStringLs=Arrays.asList("A","A","A","r","y","d");
 		

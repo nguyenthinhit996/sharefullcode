@@ -1,7 +1,5 @@
 package featuresameple.annotations;
 
- 
-
 @authorclass(
 		author = "John Doe", 
 		date = "3/17/2002", 
@@ -23,5 +21,7 @@ public class Annotationssample {
 	public static void main(String[] args) {
 		Annotationssample newob= new Annotationssample();
 		System.out.println(newob.coutdown());
+		
+		 
 	}
 }
