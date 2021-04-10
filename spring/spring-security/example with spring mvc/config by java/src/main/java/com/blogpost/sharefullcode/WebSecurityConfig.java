@@ -4,16 +4,18 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @EnableWebSecurity
 @ComponentScan("com.blogpost.sharefullcode")
-public class WebSecurityConfig implements WebMvcConfigurer {
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	@Bean
-	public UserDetailsService userDetailsService() throws Exception {
+	public UserDetailsService userDetailsService() {
 		InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
 		manager.createUser(
 				User.withDefaultPasswordEncoder().username("javatpoint").password("java123").roles("USER").build());
@@ -30,16 +32,23 @@ public class WebSecurityConfig implements WebMvcConfigurer {
 //		.and()  
 //		.httpBasic();  
 		
-		   http.antMatcher("/home").authorizeRequests().anyRequest().anonymous().and()
-		   .antMatcher("/index")                               
-	        .authorizeRequests()  
-	            .anyRequest().hasRole("USER")  
-	            .and().formLogin().and()  
-	        .httpBasic()  
-	        .and()  
-	        .logout()  
-	        .logoutUrl("/j_spring_security_logout")  
-	        .logoutSuccessUrl("/home")
-	        ;  
+		// login basic default of spring security
+//		   http.antMatcher("/home").authorizeRequests().anyRequest().anonymous().and()
+//		   .antMatcher("/index")                               
+//	        .authorizeRequests()  
+//	            .anyRequest().hasRole("USER")  
+//	            .and().formLogin().and()  
+//	        .httpBasic()  
+//	        .and()  
+//	        .logout()  
+//	        .logoutUrl("/j_spring_security_logout")  
+//	        .logoutSuccessUrl("/home")
+//	        ;  
+		
+		//login customize
+		http.authorizeRequests().
+		antMatchers("/index", "/user","/").permitAll().
+		antMatchers("/admin").authenticated().and().formLogin().loginPage("/login").and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
+		
 	}
 }
