@@ -46,9 +46,23 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 //	        ;  
 		
 		//login customize
+//		http.authorizeRequests().
+//		antMatchers("/index", "/user","/").permitAll().
+//		antMatchers("/admin").authenticated().and().formLogin().loginPage("/login").and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
+		
+		//remember me
 		http.authorizeRequests().
 		antMatchers("/index", "/user","/").permitAll().
-		antMatchers("/admin").authenticated().and().formLogin().loginPage("/login").and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
+		antMatchers("/admin").authenticated()
+		.and()
+		.formLogin().loginPage("/login")
+		.and()
+		.rememberMe().key("rem-mem-ber-me")
+		.rememberMeParameter("checkboxrememberme") // it is name of checkbox at login page  
+		.rememberMeCookieName("cookierememberlogin") // it is name of the cookie  
+		.tokenValiditySeconds(60) // remember for number of seconds  
+		.and()
+		.logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
 		
 	}
 }
