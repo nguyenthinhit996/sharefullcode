@@ -15,6 +15,8 @@ import org.springframework.web.servlet.view.JstlView;
 @ComponentScan({ "com.blogpost.sharefullcode.*" }) // scan contrller class
 public class WebConfig implements WebMvcConfigurer {
 
+	
+	
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
 		registry.addViewController("/index").setViewName("index");
@@ -22,6 +24,7 @@ public class WebConfig implements WebMvcConfigurer {
 		registry.addViewController("/anonymous").setViewName("anonymous");
 		registry.addViewController("/loginpage").setViewName("loginpage");
 		registry.addViewController("/loginsuccess").setViewName("loginsuccess");
+		registry.addViewController("/user").setViewName("user");
 	}
 	
 	@Bean
