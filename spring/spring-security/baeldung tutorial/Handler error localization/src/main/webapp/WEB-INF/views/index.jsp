@@ -4,13 +4,10 @@
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
-<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-
 <%-- config in source AppConfig.jav by 
 @Bean
 public MessageSource messageSource() {
 <fmt:setBundle basename="messages" /> --%>
-
 
 <fmt:message key="message.password" var="noPass" />
 <fmt:message key="message.username" var="noUser" />

@@ -8,6 +8,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.web.authentication.rememberme.PersistentTokenBasedRememberMeServices;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -23,12 +24,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	}
 
 	protected void configure(HttpSecurity http) throws Exception {
-	
-		http  
-		.authorizeRequests()  
-		.anyRequest().authenticated()  
-		.and()  
-		.httpBasic();  
+
+//		http  
+//		.authorizeRequests()  
+//		.anyRequest().authenticated()  
+//		.and()  
+//		.httpBasic();  
 		
 		// login basic default of spring security
 //		   http.antMatcher("/home").authorizeRequests().anyRequest().anonymous().and()
@@ -49,18 +50,18 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 //		antMatchers("/admin").authenticated().and().formLogin().loginPage("/login").and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
 		
 		//remember me
-//		http.authorizeRequests().
-//		antMatchers("/index", "/user","/").permitAll().
-//		antMatchers("/admin").authenticated()
-//		.and()
-//		.formLogin().loginPage("/login")
-//		.and()
-//		.rememberMe().key("rem-mem-ber-me")
-//		.rememberMeParameter("checkboxrememberme") // it is name of checkbox at login page  
-//		.rememberMeCookieName("cookierememberlogin") // it is name of the cookie  
-//		.tokenValiditySeconds(60) // remember for number of seconds  
-//		.and()
-//		.logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
+		http.authorizeRequests().
+		antMatchers("/index", "/user","/").permitAll().
+		antMatchers("/admin").authenticated()
+		.and()
+		.formLogin().loginPage("/login")
+		.and()
+		.rememberMe().key("rem-mem-ber-me")
+		.rememberMeParameter("checkboxrememberme") // it is name of checkbox at login page  
+		.rememberMeCookieName("cookierememberlogin") // it is name of the cookie  
+		.tokenValiditySeconds(600) // remember for number of seconds  
+		.and()
+		.logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
 		
 	}
 }
