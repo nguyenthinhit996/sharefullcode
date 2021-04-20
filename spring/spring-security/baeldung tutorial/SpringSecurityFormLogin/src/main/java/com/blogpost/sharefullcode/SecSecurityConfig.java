@@ -21,6 +21,7 @@ public class SecSecurityConfig extends WebSecurityConfigurerAdapter {
 	MyUserDetailsService userDetailsService;
 	
 	public SecSecurityConfig() {
+	 
         super();
     }
 	
