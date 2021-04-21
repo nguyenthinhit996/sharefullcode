@@ -13,10 +13,10 @@ import extrafieldlogin.simpleextrafield.User;
 @Repository
 public class SimpleUserRepository {
 
-	private PasswordEncoder passwordEncoderzzzz;
+	private PasswordEncoder passwordEncoder;
 
 	public SimpleUserRepository(PasswordEncoder passwordEncoder) {
-		this.passwordEncoderzzzz = passwordEncoder;
+		this.passwordEncoder = passwordEncoder;
 	}
 
 	public User findUser(String username, String domain) {
@@ -26,7 +26,7 @@ public class SimpleUserRepository {
 			Collection<? extends GrantedAuthority> authorities = new ArrayList<>();
 //			User user = new User(username, domain, passwordEncoder.passwordEncoder("secret"), true, true, true, true,
 //					authorities);
-			User user = new User(username, domain, passwordEncoderzzzz.encode("secret"), true, true, true, true,
+			User user = new User(username, domain, passwordEncoder.encode("secret"), true, true, true, true,
 					authorities);
 			return user;
 		}

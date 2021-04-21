@@ -7,9 +7,15 @@ import org.springframework.security.authentication.AuthenticationServiceExceptio
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 public class SimpleAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
+	
+//	@Bean
+//	public AuthenticationFailureHandler authenticationFailureHandler() {
+//		return new CustomAuthenticationFailureHandler();
+//	}
 	
 	 public static final String SPRING_SECURITY_FORM_DOMAIN_KEY = "domain";
 
@@ -44,6 +50,7 @@ public class SimpleAuthenticationFilter extends UsernamePasswordAuthenticationFi
 				domain);
 		return new UsernamePasswordAuthenticationToken(usernameDomain, password);
 	}
+	
 
 	private String obtainDomain(HttpServletRequest request) {
 		return request.getParameter(SPRING_SECURITY_FORM_DOMAIN_KEY);

@@ -1,7 +1,6 @@
-<form class="form-signin" th:action="@{/login}" method="post">
+<form method="post" action="login">
  <h2 class="form-signin-heading">Please sign in</h2>
  <p>Example: user / domain / password</p>
- <p th:if="${param.error}" class="error">Invalid user, password, or domain</p>
  <p>
    <label for="username" class="sr-only">Username</label>
    <input type="text" id="username" name="username" class="form-control" 
