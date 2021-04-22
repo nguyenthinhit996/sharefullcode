@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -22,6 +23,7 @@ import com.blogpost.sharefullcode.filter.MyBasicAuthenticationEntryPoint;
 
 @Configuration
 @EnableWebSecurity
+@ComponentScan("com.blogpost.sharefullcode.*")
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	  @Autowired
@@ -41,36 +43,40 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@Override
     protected void configure(HttpSecurity http) throws Exception {
-//        http.authorizeRequests()
-//        .antMatchers("/").hasAnyRole("USER")
-//          .antMatchers("/home").permitAll()
-//          .anyRequest().authenticated()
-//          .and()
-//          .httpBasic()
-//          .authenticationEntryPoint(authenticationEntryPoint);
-//		
-////		http.addFilterAfter(new CustomFilter(), BasicAuthenticationFilter.class);
+        http.authorizeRequests()
+        .antMatchers("/user/***").hasAnyRole("USER")
+          .antMatchers("/home").permitAll()
+          .anyRequest().authenticated()
+          .and()
+          .httpBasic()
+          .authenticationEntryPoint(authenticationEntryPoint);
+          
+  
+//		http.addFilterAfter(new CustomFilter(), BasicAuthenticationFilter.class);
 	
 		// use multi antMatcher phai du phong /** o cuoi
-		http.antMatcher("/api/user/**")
-				.authorizeRequests()
-				.antMatchers("/api/user/").hasAnyRole("USER")
-				.antMatchers("/api/user/vip").hasAnyRole("USER","ADMIN")
-				
-			.and()
-			.antMatcher("/api/admin/**")
-			.authorizeRequests()
-			.antMatchers("/api/admin/").hasRole("ADMIN")
-			.antMatchers("/api/admin/vip").hasAnyRole("ADMIN")
-			
-			.and()
-			.antMatcher("/**").authorizeRequests().anyRequest().authenticated()
-			.and()
-			.formLogin();  
+//		http.antMatcher("/api/user/**")
+//				.authorizeRequests()
+//				.antMatchers("/api/user/").hasAnyRole("USER")
+//				.antMatchers("/api/user/vip").hasAnyRole("USER","ADMIN")
+//				
+//			.and()
+//			.antMatcher("/api/admin/**")
+//			.authorizeRequests()
+//			.antMatchers("/api/admin/").hasRole("ADMIN")
+//			.antMatchers("/api/admin/vip").hasAnyRole("ADMIN")
+//			
+//			.and()
+//			.antMatcher("/**").authorizeRequests().anyRequest().authenticated()
+//			.and()
+//			.formLogin();  
     }
 	
 	@Bean
     public PasswordEncoder passwordEncoder() {
         return  PasswordEncoderFactories.createDelegatingPasswordEncoder();
     }
+	
+	// fix Can not find the tag library descriptor for "http://www.springframework.org/security/tags"
+	 
 }

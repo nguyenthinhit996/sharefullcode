@@ -10,7 +10,7 @@
 	<a href="/springsecuritybasicauthenticated/logout">logout</a>
 
 
-	<form:form action="${pageContext.request.contextPath}/logout"
+	<form:form action="/logout"
 		method="POST">
 		<input type="submit" value="Logout" />
 	</form:form>

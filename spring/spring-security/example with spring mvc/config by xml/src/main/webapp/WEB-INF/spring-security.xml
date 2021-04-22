@@ -11,6 +11,7 @@
 		<intercept-url pattern="/admin"
 			access="hasRole('ADMIN')" />
 		<csrf disabled="true" />
+		 
 	</http>
 	<authentication-manager>
 		<authentication-provider>
