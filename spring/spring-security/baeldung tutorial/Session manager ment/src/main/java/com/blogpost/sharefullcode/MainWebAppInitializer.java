@@ -35,6 +35,7 @@ public class MainWebAppInitializer implements WebApplicationInitializer {
 		
 		// config session managerment 
 		sc.setSessionTimeout(1); //1 minutes , if time is over then it auto call .sessionManagement().invalidSessionUrl("/loginpage")
+		
 	}
 
 }

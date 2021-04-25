@@ -24,6 +24,7 @@ import org.springframework.security.web.authentication.AuthenticationSuccessHand
 import org.springframework.security.web.session.HttpSessionEventPublisher;
 import org.springframework.security.web.session.SessionInformationExpiredEvent;
 import org.springframework.security.web.session.SessionInformationExpiredStrategy;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.blogpost.sharefullcode.services.MyUserDetailsService;
 
@@ -50,7 +51,7 @@ public class SecSecurityConfig extends WebSecurityConfigurerAdapter {
 		auth.userDetailsService(userDetailsService);
 	}
 
-	
+	@CrossOrigin()
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		 http.csrf().disable()
@@ -77,10 +78,11 @@ public class SecSecurityConfig extends WebSecurityConfigurerAdapter {
 	     .sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED) // default
 	     .maximumSessions(1) //To enable the scenario which allows multiple concurrent sessions, login in only one where 
 	     .expiredUrl("/sessionExpired").expiredSessionStrategy(new CustomSessionInformationExpiredStrategy("/sessionExpired"));
-	     	
+		 //we must take an extra step to make sure it plays well with CORS. It's because CORS must be processed first. 
+		 http.cors();	     
 	}
 	
-	 
+	   
 	
 	//Concurrent Session Control
 	@Bean
