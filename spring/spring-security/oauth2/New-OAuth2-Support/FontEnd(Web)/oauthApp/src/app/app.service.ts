@@ -4,6 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { throwError } from 'rxjs';
+import { JwtHelperService } from "@auth0/angular-jwt";
  
 export class Student {
   constructor(
@@ -13,6 +14,7 @@ export class Student {
 
 @Injectable()
 export class AppService {
+  public jwtHelper = new JwtHelperService();
    public clientId = 'newClient';
    public redirectUri = 'http://localhost:8089/';
 
@@ -41,6 +43,7 @@ export class AppService {
     Cookie.set("id_token", token.id_token, expireDate);
     console.log('Obtained Access token');
     window.location.href = 'http://localhost:8089';
+    this.getPropertyiInToken("organization ");
   }
 
   getResource(resourceUrl:any) : Observable<any>{
@@ -96,4 +99,28 @@ export class AppService {
 
     window.location.href = logoutURL;
   } 
+
+  getPropertyiInToken(properties:any){
+    let token = Cookie.get('access_token');
+    var payload = this.jwtHelper.decodeToken(token);
+    console.log(payload);
+    console.log("Properties of payload ("+ properties +")" + payload.organization);
+  }
+
+  getOriganzation(origanzationURL:string){
+    var headers = new HttpHeaders({'Content-type': 'application/x-www-form-urlencoded; charset=utf-8', 'Authorization': 'Bearer '+Cookie.get('access_token')});
+    return this._http.get(origanzationURL, { headers: headers }).pipe(
+      map((resdd) => {
+        console.log("Origanzation :"+resdd)
+        return resdd;
+      }),
+      catchError((err) => {
+        console.log('error caught in service')
+        console.error(err);
+        //Handle the error here
+        return throwError(err);    //Rethrow it back to component
+      })
+      );
+  }
+
 }

@@ -32,14 +32,24 @@ import { AppService, Student } from './app.service'
         <button class="btn btn-primary" (click)="editStudent()" type="submit">edit</button>        
     </div>
 
+    <h1 ngModel="origanzation"> {{origanzation}} </h1>
+
+    <div class="col-sm-12">
+        <button class="btn btn-primary" (click)="getOriganzation()" type="submit">getOriganzation</button>        
+    </div>
+
 </div>`
 })
 
 export class StudentComponent {
+    
+    public origanzation:any = "not set";
+
     public foo = new Student(1, 'sample foo');
     public foos: Array<Student> = Array<Student>();
 
     private foosUrl = 'http://localhost:8081/resource-server/api/student';
+    private origanzationURL = 'http://localhost:8081/resource-server/user/info';
 
     constructor(private _service: AppService) { }
 
@@ -67,6 +77,13 @@ export class StudentComponent {
         this._service.editStudent(this.foosUrl,foo)
         .subscribe(
             data => console.log(data),
+            error => this.foo.name = 'Error');
+    }
+
+    getOriganzation(){
+        this._service.getOriganzation(this.origanzationURL)
+        .subscribe(
+            data => this.origanzation = JSON.stringify(data),
             error => this.foo.name = 'Error');
     }
 }
