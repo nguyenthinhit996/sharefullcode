@@ -1,0 +1,11 @@
+https://www.baeldung.com/spring-security-5-oauth2-login
+
+Springboot + Thymeleaf + Google Oauth
+
+Login bằng
+Sử dụng Oauth 2.0 của google 
+Sử dụng login page bình thường
+
+Customize loginpage + default success + faulire login page
+
+

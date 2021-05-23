@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="layout :: headerFragment">
+</head>
+<body>
+	<h1>Hello this is login page</h1>
+	<div>
+		<h3>Login by Google</h3>
+		<p th:text="${urls}">default</p>
+		<p th:each="url : ${urls}">
+			<a th:text="${url.key}" th:href="${url.value}">Client</a>
+		</p>
+	</div>
+
+	<br>
+
+	<div>
+		<h3>Login Normal</h3>
+
+		<form action="./login" method="post">
+			<p>
+				<label for="username">Username</label> <input type="text"
+					id="username" name="username" />
+			</p>
+			<p>
+				<label for="password">Password</label> <input type="password"
+					id="password" name="password" />
+			</p>
+			 
+			<button type="submit" class="btn">Log in</button>
+		</form>
+	</div>
+</body>
+</html>
