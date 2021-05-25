@@ -33,7 +33,10 @@ export class HomeComponent {
         window.location.href =
          'http://localhost:8083/auth/realms/baeldung/protocol/openid-connect/auth?response_type=code&&scope=openid%20read%20write&client_id=' + 
           this._service.clientId + '&redirect_uri='+ this._service.redirectUri;
-    }
+
+          // login thanh công sẽ đi đến redirect_uri (http://localhost:8089) chính là page này luôn lúc này sẽ nhảy vào ngOnInit để lấy token
+          // http://localhost:8089/ là trang home do app.module.ts quy định
+        }
  
     logout() {
         this._service.logout();

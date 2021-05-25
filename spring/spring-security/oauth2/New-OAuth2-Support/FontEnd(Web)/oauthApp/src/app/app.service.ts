@@ -41,9 +41,45 @@ export class AppService {
     var expireDate = new Date().getTime() + (1000 * token.expires_in);
     Cookie.set("access_token", token.access_token, expireDate);
     Cookie.set("id_token", token.id_token, expireDate);
+    var expireDateRefresh_token = new Date().getTime() + (1000 * token.refresh_expires_in);
+    Cookie.set("refresh_token", token.refresh_token, expireDateRefresh_token);
     console.log('Obtained Access token');
     window.location.href = 'http://localhost:8089';
     this.getPropertyiInToken("organization ");
+  }
+
+  refreshToken(){
+    // Method: POST
+    // URL: https://keycloak.example.com/auth/realms/myrealm/protocol/openid-connect/token
+    // Body type: x-www-form-urlencoded
+    // Form fields:    
+    // client_id : <my-client-name>
+    // grant_type : refresh_token
+    // refresh_token: <my-refresh-token>
+
+    let refresh_token = Cookie.get('refresh_token');
+    let params = new URLSearchParams();   
+    params.append('grant_type','refresh_token');
+    params.append('client_id', this.clientId);
+    params.append('client_secret', 'newClientSecret');
+    params.append('refresh_token', refresh_token);
+
+    let headers = new HttpHeaders({'Content-type': 'application/x-www-form-urlencoded; charset=utf-8'});
+    return this._http.post('http://localhost:8083/auth/realms/baeldung/protocol/openid-connect/token', params.toString(), { headers: headers })
+    .pipe(
+      map(data =>{
+        console.log(data);
+        this.saveToken(data);
+        return data;
+        }),
+      catchError(
+        err => {
+          console.log(err);
+          return throwError(err); 
+        }
+      )
+    )
+
   }
 
   getResource(resourceUrl:any) : Observable<any>{

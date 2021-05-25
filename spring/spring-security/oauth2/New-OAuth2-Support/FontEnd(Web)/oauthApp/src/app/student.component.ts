@@ -38,6 +38,10 @@ import { AppService, Student } from './app.service'
         <button class="btn btn-primary" (click)="getOriganzation()" type="submit">getOriganzation</button>        
     </div>
 
+    <div class="col-sm-12">
+        <button class="btn btn-primary" (click)="refreshToken()" type="submit">refreshToken</button>        
+    </div>
+
 </div>`
 })
 
@@ -84,6 +88,12 @@ export class StudentComponent {
         this._service.getOriganzation(this.origanzationURL)
         .subscribe(
             data => this.origanzation = JSON.stringify(data),
+            error => this.foo.name = 'Error');
+    }
+    refreshToken(){
+        this._service.refreshToken()
+        .subscribe(
+            data => console.log(data),
             error => this.foo.name = 'Error');
     }
 }
