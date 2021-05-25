@@ -1,0 +1,36 @@
+server:
+    port: 8089
+logging:
+    level:
+       org:
+         springframework : debug
+zuul:
+  routes:
+    auth/code:
+      path: /auth/code/**
+      sensitiveHeaders:
+      url: http://localhost:8083/auth/realms/baeldung/protocol/openid-connect/auth
+    auth/token:
+      path: /auth/token/**
+      sensitiveHeaders:
+      url: http://localhost:8083/auth/realms/baeldung/protocol/openid-connect/token
+    auth/refresh/revoke:
+      path: /auth/refresh/revoke/**
+      sensitiveHeaders:
+      url: http://localhost:8083/auth/realms/baeldung/protocol/openid-connect/logout
+    auth/refresh:
+      path: /auth/refresh/**
+      sensitiveHeaders:
+      url: http://localhost:8083/auth/realms/baeldung/protocol/openid-connect/token
+    auth/redirect:
+      path: /auth/redirect/**
+      sensitiveHeaders:
+      url: http://localhost:8089/
+    auth/resources:
+      path: /auth/resources/**
+      sensitiveHeaders:
+      url: http://localhost:8083/auth/resources/
+    
+  Servlet30WrapperFilter:
+    pre:
+      disable:true
