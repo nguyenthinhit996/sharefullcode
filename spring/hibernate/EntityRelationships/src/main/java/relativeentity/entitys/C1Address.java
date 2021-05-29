@@ -21,10 +21,13 @@ public class C1Address {
 	private String city;
 	
 	
-	@OneToOne(mappedBy = "addressdb") // tên này trên Entity C1User1 có attribute C1Address addressdb
+//	@OneToOne(mappedBy = "addressdb") // tên này trên Entity C1User1 có attribute C1Address addressdb
+//	private C1User user;
+
+	@OneToOne(mappedBy = "ccccccc") // tên này trên Entity C1User1 có attribute C1Address addressdb
 	private C1User user;
-
-
+	
+	
 	/**
 	 * @return the idxxxx
 	 */

@@ -9,6 +9,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
 
 public class HibernateUtilNormal {
@@ -35,6 +36,15 @@ public class HibernateUtilNormal {
 //            metadataSources.addAnnotatedClass(relativeentity.entitys.User_Add.class);
             metadataSources.addAnnotatedClass(relativeentity.entitys.C3Address3.class);
             metadataSources.addAnnotatedClass(relativeentity.entitys.C3User3.class);
+            
+            metadataSources.addAnnotatedClass(relativeentity.entitys.manytomanypojo.Course.class);
+            metadataSources.addAnnotatedClass(relativeentity.entitys.manytomanypojo.Student.class);
+            
+            metadataSources.addAnnotatedClass(relativeentity.entitys.manytomanypojo.CompositeCourse.class);
+            metadataSources.addAnnotatedClass(relativeentity.entitys.manytomanypojo.CompositeStudent.class);
+            metadataSources.addAnnotatedClass(relativeentity.entitys.manytomanypojo.Student_Course.class);
+            
+            metadataSources.addAnnotatedClass(relativeentity.entitys.manytomanypojo.Student_Course_NewID.class);
     
             
             Metadata metadata = metadataSources.getMetadataBuilder()

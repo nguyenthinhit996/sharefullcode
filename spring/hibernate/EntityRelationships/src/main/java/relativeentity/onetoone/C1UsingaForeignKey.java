@@ -1,5 +1,6 @@
 package relativeentity.onetoone;
 
+import java.util.Collections;
 import java.util.List;
 
 import org.hibernate.SessionFactory;
@@ -31,6 +32,6 @@ public class C1UsingaForeignKey {
 		dsAddress.stream().forEach(System.out::println);
 		
 		sessionFactory.close();
-	}
+	} 
 	
 }
