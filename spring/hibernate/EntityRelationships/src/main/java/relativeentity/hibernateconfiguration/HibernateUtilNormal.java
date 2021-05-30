@@ -47,6 +47,9 @@ public class HibernateUtilNormal {
             metadataSources.addAnnotatedClass(relativeentity.entitys.manytomanypojo.Student_Course_NewID.class);
     
             
+            metadataSources.addAnnotatedClass(relativeentity.entitys.entitysach.TableR.class);
+            metadataSources.addAnnotatedClass(relativeentity.entitys.entitysach.TableS.class);
+            
             Metadata metadata = metadataSources.getMetadataBuilder()
                     .build();
 

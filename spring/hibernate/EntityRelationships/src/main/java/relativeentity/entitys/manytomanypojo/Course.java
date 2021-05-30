@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
@@ -20,7 +21,7 @@ public class Course {
 	@Column(name = "name")
 	private String name;
 	
-	@ManyToMany(mappedBy = "dsCourse")
+	@ManyToMany(mappedBy = "dsCourse", fetch = FetchType.LAZY)
 	List<Student> dsStudent;
 
 	/**
