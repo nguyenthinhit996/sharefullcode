@@ -3,26 +3,29 @@ package featuresameple.lambda;
 public class Lambdasample {
 
 	// Golbal static variable
-	static int golbalStaticVariable = 444;
+	static int golbalStaticVariable = 1; // change able in lambda
 	// Golbal variable
-	private int golbalVarable = 88;
+	private int golbalVarable = 1; // change able in lambda
 
 
 	void test() {
 		// local variabe
-		int localVariable = 100;
+		int localVariable = 1; // only use not change
 
 		// lambda in SE8 or later version
 		Functionlambdatest se8 = () -> {
 			golbalStaticVariable = golbalStaticVariable + 100;
-			System.out.println(golbalStaticVariable);
-			golbalVarable = 111;
+			System.out.println("In lambda golbalStaticVariable: "+golbalStaticVariable); //101
+			golbalVarable = 100;
 			golbalVarable = golbalVarable + localVariable;
+			System.out.println("In lambda golbalVarable: "+golbalVarable); //101
 			return golbalStaticVariable == 100 ? true : false;
 		};
 
-		boolean stateSe7 = se8.test();
-		System.out.println("Result se8: " + stateSe7);
+		boolean stateSe8 = se8.test();
+		System.out.println("Result se8: " + stateSe8);
+		System.out.println("Out lambda golbalStaticVariable: "+golbalStaticVariable); //101
+		System.out.println("Out lambda golbalVarable: "+golbalVarable); //101
 	}
 
 	public static void main(String[] args) {
