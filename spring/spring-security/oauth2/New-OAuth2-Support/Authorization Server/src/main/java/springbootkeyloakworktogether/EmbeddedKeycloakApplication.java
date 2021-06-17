@@ -3,7 +3,6 @@ package springbootkeyloakworktogether;
 import java.util.NoSuchElementException;
 
 import org.keycloak.Config;
-import org.keycloak.models.AccountRoles;
 import org.keycloak.models.AdminRoles;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.RealmModel;
@@ -70,25 +69,6 @@ public class EmbeddedKeycloakApplication extends KeycloakApplication {
 
 			RoleModel adminRole = realm.getRole(AdminRoles.ADMIN);
 			adminUser.grantRole(adminRole);
-			
-			// test add new user normal for realm admin
-			UserModel normalUser = session2.users().addUser(realm, "thinh");
-			adminUser.setEnabled(true);
-
-			UserCredentialModel usrNormalCredModel = UserCredentialModel.password("123");
-			session2.userCredentialManager().updateCredential(realm, normalUser, usrNormalCredModel);
-
-			normalUser.setFirstName("nguyen");
-			normalUser.setLastName("thinh");
-			normalUser.setEnabled(true);
-			
-			RoleModel adminRole1 = realm.getRole(AdminRoles.MANAGE_CLIENTS);
-			normalUser.grantRole(adminRole1);
-			RoleModel adminRole2 = realm.getRole(AdminRoles.MANAGE_USERS);
-			normalUser.grantRole(adminRole2);
-			RoleModel adminRole3 = realm.getRole(AdminRoles.MANAGE_AUTHORIZATION);
-			normalUser.grantRole(adminRole3);
-		
 
 //		        --
 
