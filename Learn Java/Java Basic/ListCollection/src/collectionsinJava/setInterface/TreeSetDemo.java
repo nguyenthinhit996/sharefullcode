@@ -9,6 +9,7 @@ import java.util.TreeSet;
 /**
  * that uses a tree for storage.
  * TreeSet also contains unique elements.
+ * Class element must implement Comparable, if not throw case ClassCastException
  * the access and retrieval time of TreeSet is quite fast. The elements in TreeSet stored in ascending order.
  * @author Peter
  *
