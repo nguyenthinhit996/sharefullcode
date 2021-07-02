@@ -1,5 +1,6 @@
 package annotationspringjava.beancreate;
 
+import annotationspringjava.POJO.StudentPOJO4;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
@@ -24,5 +25,12 @@ public class ConfigurationAnnotationCreate {
 	StudentPOJO2 getObjectStudentPOJOByBeanWithParam(StudentPOJO j, StudentPOJO3 i) {
 		System.out.println("auto bean call contructor "+ j.getName() +", "+ i.getName());
 		return new StudentPOJO2(j.getName()+i.getName(),0);
+	}
+
+
+	//test Autowired on field
+	@Bean
+	StudentPOJO4 getObjectStudentPOJO4ByBean() {
+			return new StudentPOJO4();
 	}
 }
