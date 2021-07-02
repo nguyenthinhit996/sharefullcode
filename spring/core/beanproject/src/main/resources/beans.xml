@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans                                               http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context 
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Sử dụng constructor -->
+	<bean id="exampleBean" class="basicioc.pojo.StudentPOJO" />
+
+	<!-- Sử dụng static factory method -->
+	<bean id="exampleBean2" class="basicioc.pojo.StudentPOJO2"
+		factory-method="createInstance" />
+
+	<!-- Sử dụng instance factory method type 2 static function get factory -->
+	<bean id="type2" class="basicioc.factorymethods.PrintableFactory2"
+		factory-method="getInstance" />
+
+
+	<!-- Sử dụng instance factory method type 3 non-static function get factory -->
+	<bean id="beanPrintableFactory3"
+		class="basicioc.factorymethods.PrintableFactory3" />
+	<bean id="type3" class="basicioc.factorymethods.PrintableFactory3"
+		factory-method="getInstance" factory-bean="beanPrintableFactory3" />
+
+
+	<!-- Dependency contruct String name, String nameClass, int maso, int maso2 -->
+	<bean id="constructorarg"
+		class="basicioc.pojo.ContructPOJODependency">
+		<constructor-arg index="0" value="name 0"></constructor-arg>
+		<constructor-arg index="1" value="nameClass 1"></constructor-arg>
+		<constructor-arg index="2" value="500"></constructor-arg>
+		<constructor-arg index="3" value="300"></constructor-arg>
+	</bean>
+
+	<!-- Dependency setter String name, String nameClass, int maso, int maso2 -->
+	<bean id="setterarg" class="basicioc.pojo.ContructPOJODependency">
+		<property name="name">
+			<value>setter name</value>
+		</property>
+		<property name="nameClass">
+			<value>"setter nameClass"</value>
+		</property>
+		<property name="maso">
+			<value>355</value>
+		</property>
+		<property name="maso2">
+			<value>3553</value>
+		</property>
+	</bean>
+
+	<!--Custome init() va destroy() methods -->
+	<bean id="lifecycle"
+		class="basicioc.pojo.ContructPOJODependencyLifeCycle"
+		init-method="customInit" destroy-method="customDestroy" />
+
+<!-- 	ContructPOJODependencyLifeCycleAnnotation -->
+	<bean id="lifecycleanotation"
+		class="basicioc.pojo.ContructPOJODependencyLifeCycleAnnotation"
+		/>
+
+
+	<!-- bean mode lite -->
+	
+	<!-- bean mode lite -->
+	<bean id="beanNonStaticUseBeanInClassNormal"
+		class="basicioc.beanannotations.UseBeanInClassNormal"
+		/>
+	
+	<bean id="useBeanInClassNormal"
+		class="basicioc.beanannotations.UseBeanInClassNormal"
+		factory-method="getBeanInNormalClassOrNotConfigAnnoClass"
+		factory-bean="beanNonStaticUseBeanInClassNormal"
+		/>
+</beans>

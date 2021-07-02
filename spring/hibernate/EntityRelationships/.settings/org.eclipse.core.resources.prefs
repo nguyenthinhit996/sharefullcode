@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//src/main/java/relativeentity/entitys/C1User.java=UTF-8
+encoding//src/main/java/relativeentity/entitys/C2User2.java=UTF-8
+encoding//src/main/java/relativeentity/entitys/C3Address3.java=UTF-8
+encoding//src/main/java/relativeentity/entitys/C3User3.java=UTF-8
+encoding//src/main/java/relativeentity/entitys/manytomanypojo/CompositeStudent.java=UTF-8
+encoding//src/main/java/relativeentity/entitys/manytomanypojo/Student.java=UTF-8
+encoding//src/main/java/relativeentity/entitys/manytomanypojo/Student_Course.java=UTF-8
+encoding//src/main/java/relativeentity/entitys/manytomanypojo/Student_Course_NewID.java=UTF-8
+encoding//src/main/java/relativeentity/hibernateconfiguration/HibernateUtilsMVC.java=UTF-8
+encoding//src/main/java/relativeentity/manytomany/note.txt=UTF-8
+encoding/<project>=UTF-8
