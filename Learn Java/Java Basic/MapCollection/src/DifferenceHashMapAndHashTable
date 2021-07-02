@@ -1,0 +1,10 @@
+
+
+HashMap and Hashtable both are used to store data in key and value form.
+Both are using hashing technique to store unique keys.
+
+HashMap                                             HashTable
+Non-synchronized                                    Synchronized
+allows one null key and multiple null values.       doesn't allow any null key or value.
+fast                                                low
+fail-fast (occurred error stop)                     not fail-fast (ignore error continue action)

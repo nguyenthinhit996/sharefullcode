@@ -29,4 +29,9 @@ public class Pojobeanannotation {
 		// TODO Auto-generated method stub
 		return  this.a +","+ this.b;
 	}
+	
+	public static void main(String[] args) {
+		
+		
+	}
 }

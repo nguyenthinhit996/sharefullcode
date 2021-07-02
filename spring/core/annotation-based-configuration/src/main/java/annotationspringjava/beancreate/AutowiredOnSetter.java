@@ -10,8 +10,10 @@ public class AutowiredOnSetter {
 	
 	@Autowired
 	void setObjectFromBean(StudentPOJO getObjectStudentPOJOByBean) {
-		System.out.println("Autowired on Setter " + getObjectStudentPOJOByBean.toString());
+		System.out.println("AutowiredOnSetter call Autowired " + getObjectStudentPOJOByBean.toString());
 	}
-	
 
+	AutowiredOnSetter(){
+		System.out.println("AutowiredOnSetter Constructor non argument");
+	}
 }
