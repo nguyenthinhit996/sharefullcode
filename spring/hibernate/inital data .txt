@@ -1,0 +1,52 @@
+Nhớ clean trước khi run
+
+
+-------Test---------
+#Log
+logging.level.org.springframework=trace
+logging.level.com.minahotel.sourcebackend=trace
+logging.level.com.zaxxer=debug
+logging.level.root=debug
+
+#Data source
+spring.datasource.hikari.connectionTimeout=20000
+spring.datasource.hikari.maximumPoolSize=5
+spring.datasource.url=jdbc:mysql://localhost:3306/hotelminaTest
+spring.datasource.username=root
+spring.datasource.password=123456a
+
+#hibernate
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+spring.jpa.show-sql=true
+
+lưu ý là file data.sql dữ liệu phải sạch
+
+------------- Entity mapping va data.sql------------------
+tên shema phải tồn tại trong db
+#auto mapping entity with database create table in database
+spring.jpa.hibernate.ddl-auto=create-drop 
+spring.datasource.initialization-mode=always
+
+=>> tự động create table and mapping hibernate source to database, run file data.sql file sql này chỉ chứa data thôi
+
+
+--------- shema.sql và data.sql
+spring.jpa.hibernate.ddl-auto=none
+#run scritp data.sql
+spring.jpa.generate-ddl=true
+spring.datasource.initialization-mode=always
+
+=>> tự động run file shema.sql va chua run duoc data.sql, 
+nhung co thể test bằng cách đặt
+//@Sql(scripts = "classpath:data.sql", executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
+@Sql(scripts = "classpath:data.sql")
+trước class để call sql để test khi test xong data sẽ mất hết.
+
+------------------------------------------------------------------Product--------------
+spring.jpa.hibernate.ddl-auto=none
+#run scritp data.sql
+#spring.jpa.generate-ddl=true chỗ này mở cung dc không mở cũng ok 
+spring.datasource.initialization-mode=always
+
+ file schema.sql chứa create table và data chạy ok nhưng phải sắp xếp đúng vị trí nào trước nào sau theo kiểu cha rồi mới table con
+file data.sql chứa data và schema.sql chưa create vẫn chạy ok

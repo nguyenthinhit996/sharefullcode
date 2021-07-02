@@ -1,0 +1,17 @@
+.contextForm {
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contextForm .contextForm--form {
+    flex-direction: column;
+}
+
+.error-box{
+    border: 1px solid red;
+}
+
+.error-text {
+    color: brown;
+}
