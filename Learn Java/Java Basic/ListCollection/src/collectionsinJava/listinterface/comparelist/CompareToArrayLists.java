@@ -70,7 +70,7 @@ public class CompareToArrayLists {
         System.out.println("listOne.removeAll(listTwo) " + listCopyToCheck.removeAll(listTwo));
         System.out.println("listOne.isEmpty(): " + listCopyToCheck.isEmpty());
 
-        System.out.println("listOne.isEmpty(): " + listOne.size());
+        System.out.println("List original size " + listOne.size());
     }
 
     /**
