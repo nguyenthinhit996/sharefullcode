@@ -65,8 +65,12 @@ public class CompareToArrayLists {
         listTwo.add(new Student(2, "hs2", new Address("tp2")));
         listTwo.add(new Student(3, "hs3", new Address("tp3")));
 
-        System.out.println("listOne.removeAll(listTwo) " + listOne.removeAll(listTwo));
-        System.out.println("listOne.isEmpty(): " + listOne.isEmpty());
+        List<Student> listCopyToCheck = new ArrayList<>(listOne);
+
+        System.out.println("listOne.removeAll(listTwo) " + listCopyToCheck.removeAll(listTwo));
+        System.out.println("listOne.isEmpty(): " + listCopyToCheck.isEmpty());
+
+        System.out.println("listOne.isEmpty(): " + listOne.size());
     }
 
     /**
@@ -84,8 +88,11 @@ public class CompareToArrayLists {
         listTwo.add(new Student(2, "hs2", new Address("tp2")));
 //        listTwo.add(new Student(3, "hs3", new Address("tp3")));
 
-        System.out.println("listOne.retainAll(listTwo) " + listOne.retainAll(listTwo));
-        System.out.println("listOne size = listTwo size " + (listOne.size() == listTwo.size()));
+        List<Student> listCopyToCheck = new ArrayList<>(listOne);
+
+        System.out.println("listOne.retainAll(listTwo) " + listCopyToCheck.retainAll(listTwo));
+        System.out.println("listOne size = listTwo size " + (listCopyToCheck.size()));
+        System.out.println("List original size" + listOne.size());
     }
 
     /**
