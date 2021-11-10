@@ -15,15 +15,16 @@ if thì không vào nhưng function thì vào
 vd1:
 let age = 30
 if(true){
-    let = 111;
+    let age = 111;
 }
-console.log(let) // 30
+console.log(age) // 30
 
 vd2:
-let age = 30;
+
 function callFunction() {
     age = 111;
 }
+let age = 30;
 callFunction();
 console.log(age) // 111
 

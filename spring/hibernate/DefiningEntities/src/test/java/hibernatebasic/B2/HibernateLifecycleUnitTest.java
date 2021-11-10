@@ -74,10 +74,10 @@ public class HibernateLifecycleUnitTest {
 		assertThat(getListDirtyEntity()).size().isEqualTo(1);
 //        assertThat(getListDirtyEntity().get(0).getId()).isEqualTo(3);
 //        assertThat(getListDirtyEntity().get(0).getName()).isEqualTo("Gianluigi Buffon");
-		  TypedQuery<Collection> query = entityManager.createQuery("SELECT e.phones FROM Employee e", Collection.class);
-
-	        List<Collection> resultList = query.getResultList();
-		 assertThat(resultList).extracting("number").containsOnly("111", "222", "333");
+//		  TypedQuery<Collection> query = entityManager.createQuery("SELECT e.phones FROM Employee e", Collection.class);
+//
+//	        List<Collection> resultList = query.getResultList();
+//		 assertThat(resultList).extracting("number").containsOnly("111", "222", "333");
 	}
 
 	@Test

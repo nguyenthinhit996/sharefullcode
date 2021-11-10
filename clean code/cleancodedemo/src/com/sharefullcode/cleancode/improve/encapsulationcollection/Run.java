@@ -17,6 +17,7 @@ public class Run {
        listTree.add(banana);
        listTree.add(apple);
        listTree.add(orange);
+       listTree.add(null);
        return listTree;
    }
 
@@ -57,17 +58,28 @@ public class Run {
 
     public static void main(String[] args) {
         List<Tree> listTree = initialValue();
-        Garden garden = new Garden(listTree);
 
-        //bad code get and change list collection
-        List<Tree> trees = garden.getCollectionTree();
-        changeSomeThingOfList(trees);
-        System.out.println(trees);
+        System.out.println(listTree);
 
-        //good code get and not modify list collection
-        List<Tree> treesUnableChange = garden.getCollectionUnmodifyTree();
-        changeSomeThingOfList(treesUnableChange);
-        System.out.println(treesUnableChange);
+        List<Tree> listTree2 = listTree.stream().map(item -> {
+            String a = item != null ? "hih" : null;
+            System.out.println(a);
+            return item;
+        }).collect(Collectors.toList());
+        System.out.println(listTree2);
+
+
+//        Garden garden = new Garden(listTree);
+//
+//        //bad code get and change list collection
+//        List<Tree> trees = garden.getCollectionTree();
+//        changeSomeThingOfList(trees);
+//        System.out.println(trees);
+//
+//        //good code get and not modify list collection
+//        List<Tree> treesUnableChange = garden.getCollectionUnmodifyTree();
+//        changeSomeThingOfList(treesUnableChange);
+//        System.out.println(treesUnableChange);
     }
 }
 

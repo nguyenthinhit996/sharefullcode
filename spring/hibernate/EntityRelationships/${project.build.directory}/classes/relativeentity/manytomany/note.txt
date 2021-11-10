@@ -1,0 +1,29 @@
+
+Quan hệ nhiều nhiều:
+
++ nếu bảng trung gian không có attiribute thì cứ làm cách 1 sử dụng @Many to many và Jointable 
+
+	A                  TrungGiang           		B
+ ManyToMany <----> [chỉ có 2 khóa ngoại]  <-----> ManyToMany
+ @JoinTable
+
+
++ nếu bảng trung gian có thêm các thuộc tính thì sử dụng cách Composite key 
+
+tách Many to many thành 2 quan hệ 
+	A                 TrungGiang                 B
+ManyToOne <----> OneToMany & OneToMany <-----> ManyToOne
+				[ 2 khóa ngoại ]
+					  ||
+				[ 2 khóa chính ]
+				[ các attribute ]
+				
++ Nếu mà trường hợp 2 key của A Và B sẽ được sử dụng tiếp trong bảng TrungGiang thì ta phải thêm 1 khóa mới cho bảng trung gian 
+và đưa 2 kháo ngoại về đúng vai trò của nó là kháo ngoại
+
+	A                 TrungGiang                 B
+ManyToOne <----> OneToMany & OneToMany <-----> ManyToOne
+				[ 1 new khóa chính ]
+				[ 2 khóa ngoại     ]
+				[ các attribute    ]
+				
