@@ -1,93 +1,39 @@
 https://www.youtube.com/watch?v=IEf1KAcK6A8
 
-
 1 let and scope, 
-2const,
+2 const,
 3 array function
 4 default value
 5 Object iteral extensions
 6 detructerting object
-7 rest object
 
 
-***** 1 let vs scope:  let không hoạt động vs scope 
-vd if hoac for ... nhưng hoạt động với function  (12:00)
-chỉ hoạt động trong scope của nó. không sử dụng ngoài scope nó đang đứng
-let a =100
-if(true)
-{
-	1=333;  // not affect
-}
+1 let vs scope:
+let không hoạt động vs scope (if hoac for ... nhưng hoạt động với function)
+chỉ hoạt động trong scope của nó. không sử dụng ngoài scope nó đang đứng.
+phải khai báo trước khi sử dụng
 
-console.log(a) // 100
-nhưng thay if thành 1 function thì nó sẽ thay đổi 
+2 const: nó khá giống với final của java. chỉ là con trỏ poiter chỉ,
+vẫn có thể thay đổi cấu trúc bên trong object hoặc array. không được gán con trỏ đến vùng nhớ khác.
 
+3 array function
+Sự khác nhau của array function vs function truyền thống => khác nhau chỗ xử lí this.
+arrayfunction nó sẽ call this windown object. tranditional function nó sẽ call this current
 
+4 default value trên param function, trên destructoring
 
-******** 2 const: nó khá giống với final của java. chỉ là con trỏ poiter chỉ, vẫn có thể thay đổi cấu trúc bên trong object hoặc array. không được gán con trỏ đến vùng nhớ khác
-const a = {
-	age : 10;
-}
+5 Object iteral khai báo object.
 
-a.age = 100 // ok 
-a = object b // error
+6 Detructoring
+null => null
+undefined => default || undefined (có default sẽ lấy default ko thì vẫn là undefined)
+only copied, not modified original.
 
-const aa = [1,2,4]
-aa.push(33) // ok
-aa = bb; // error
+Detructoring Array
+can use rest operator ... to get all element
+use skip some index arrays
+use swap for some element of arrays.
 
-******* 3 array function 
-
-1 line:  const fn = () => console.log("ji");
-n linw: const fn = () => { console.log("ji")  };
-
-Sự khác nhau của array function vs function truyền thống => khác nhau chỗ xử lí this. arrayfunction nó sẽ call this windown. tranditional function nó sẽ call this current (30:00)
-
-
-******* 4 default value 
-let b =111;
-function fn (a=10, a=b) {
-}
-
-
-******* 5 Object iteral extensions
-let name ="sdfsd";
-let age =11
-let s = {
-	name
-	,age
-}
-
-same 
-
-let s = {
-	name : name
-	,age : age
-}
-
-****** Rest operator
-fun a(...a){
-a is array 
-}
-
-a(1,2,54,6,)
-let ar = [2,3,4,4]
-a(ar)
-
-
-***** detructering array
-let a = [1,4,6,7]
-
-let [c,,d] = a; // use skip
-c=1
-d=6
-
-let f = {
-	a:33,
-	b:"tt"
-}
-
-let {a} = f; // object not skip as array
-a=33
-
-
+Detructoring Object
+use name exactly get property
+can use alias

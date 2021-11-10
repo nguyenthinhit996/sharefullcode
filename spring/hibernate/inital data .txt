@@ -50,3 +50,4 @@ spring.datasource.initialization-mode=always
 
  file schema.sql chứa create table và data chạy ok nhưng phải sắp xếp đúng vị trí nào trước nào sau theo kiểu cha rồi mới table con
 file data.sql chứa data và schema.sql chưa create vẫn chạy ok
+nếu database bị xóa hay bị thiếu data, nó sẽ update data mới nhé
