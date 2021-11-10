@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c3c3d709-6a8c-44c3-89c3-a58c93aba8e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SourcebackendApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tests/DateWorkEntityGenerateAutoDefault.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tests/DateWorkEntityGenerateCustomize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tests/DateWorkEntityGenerateIncreatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tests/DateWorkEntityGenerateSquence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tests/DateWorkEntityGenerateTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tests/MyGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tests/Repo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tests/TestSave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DefiningEntities/src/main/java/hibernatebasic/B2/HibernateLifecycleUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DefiningEntities/src/main/java/hibernatebasic/B2/HibernateLifecycleUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DefiningEntities/src/main/java/hibernatebasic/entity/FootballPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DefiningEntities/src/main/java/hibernatebasic/entity/FootballPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DefiningEntities/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DefiningEntities/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1ukdrpMQHcLyTtn2CFe53ZmV5cm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\sharefullcode\spring\hibernate\HibernateGeneratorID\src\main\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tests" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SourcebackendApplication (1)">
+    <configuration name="MainBoot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainBoot" />
+      <module name="HibernateGeneratorID" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SourcebackendApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.SourcebackendApplication" />
+      <module name="HibernateGeneratorID" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SourcebackendApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SourcebackendApplication" />
+      <module name="HibernateGeneratorID" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SourcebackendApplication (1)" />
+        <item itemvalue="Application.SourcebackendApplication" />
+        <item itemvalue="Application.MainBoot" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3c3d709-6a8c-44c3-89c3-a58c93aba8e3" name="Default Changelist" comment="" />
+      <created>1625213725106</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625213725106</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

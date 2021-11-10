@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f59826ce-b12c-4a2b-a3dc-0257016505b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Learn Java/Design_pattern/factory/src/application/types/astractFactories/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Learn Java/Design_pattern/factory/src/application/types/astractFactories/factorys/AbstractFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Learn Java/Design_pattern/factory/src/application/types/astractFactories/factorys/AnimalFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Learn Java/Design_pattern/factory/src/application/types/astractFactories/model/animals/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Learn Java/Design_pattern/factory/src/application/types/astractFactories/model/animals/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Learn Java/Design_pattern/factory/src/application/types/astractFactories/model/animals/IAnimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Learn Java/Design_pattern/factory/src/application/types/factorymethod/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Learn Java/Design_pattern/factory/src/application/types/factorymethod/MethodFactoryConcrete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Learn Java/Design_pattern/factory/src/application/types/factorymethod/RegistryFactoryConcrete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Learn Java/Design_pattern/factory/src/application/types/factorymethod/model/Bike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Learn Java/Design_pattern/factory/src/application/types/factorymethod/model/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Learn Java/Design_pattern/factory/src/application/types/factorymethod/model/EnumVehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Learn Java/Design_pattern/factory/src/application/types/factorymethod/model/Motor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Learn Java/Design_pattern/factory/src/application/types/factorymethod/model/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Learn Java/Design_pattern/singleton/src/application/DemoSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Learn Java/Design_pattern/singleton/src/application/types/EarlySingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Learn Java/Design_pattern/singleton/src/application/types/LazySingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/SourcebackendApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateAutoDefault.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateCustomize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateIncreatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateSquence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/MyGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/Repo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/TestSave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/querys/SpringMainApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/querys/useexists/ExistsQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/querys/useexists/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DefiningEntities/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DefiningEntities/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EntityRelationships/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EntityRelationships/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1vTeYWqFSx8l6u657WPSQpkyW4N" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringMainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.querys.SpringMainApp" />
+      <module name="QueryExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.querys.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SpringMainApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f59826ce-b12c-4a2b-a3dc-0257016505b2" name="Default Changelist" comment="" />
+      <created>1626590556925</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626590556925</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

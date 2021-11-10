@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0f6f69d0-aa23-43d8-8878-4e7faf805b97" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/SourcebackendApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateAutoDefault.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateCustomize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateIncreatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateSquence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/MyGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/Repo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/TestSave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DefiningEntities/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DefiningEntities/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EntityRelationships/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EntityRelationships/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1uzfEsKoRZYpFvJIa36ybc7XrS1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DefiningEntities" />
+  </component>
+  <component name="RunManager" selected="Application.PaginationWithHibernate">
+    <configuration name="JPAPagination" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="relativeentity.hibernateconfiguration.Pagination.JPAPagination" />
+      <module name="pagegingandsorting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="relativeentity.hibernateconfiguration.Pagination.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaginationWithHibernate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="relativeentity.hibernateconfiguration.Pagination.PaginationWithHibernate" />
+      <module name="pagegingandsorting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="relativeentity.hibernateconfiguration.Pagination.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PaginationWithHibernate" />
+        <item itemvalue="Application.JPAPagination" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f6f69d0-aa23-43d8-8878-4e7faf805b97" name="Default Changelist" comment="" />
+      <created>1625673232115</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625673232115</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

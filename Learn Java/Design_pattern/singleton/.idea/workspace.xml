@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1eb674a5-2bbc-44df-b65d-57705c246c92" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../factory/src/application/types/astractFactories/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/application/types/astractFactories/factorys/AbstractFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/application/types/astractFactories/factorys/AnimalFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/application/types/astractFactories/model/animals/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/application/types/astractFactories/model/animals/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/application/types/astractFactories/model/animals/IAnimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/application/types/factorymethod/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/application/types/factorymethod/MethodFactoryConcrete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/application/types/factorymethod/RegistryFactoryConcrete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/application/types/factorymethod/model/Bike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/application/types/factorymethod/model/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/application/types/factorymethod/model/EnumVehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/application/types/factorymethod/model/Motor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/application/types/factorymethod/model/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/DemoSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/types/EarlySingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/types/LazySingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/creational/factory/readMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/observer/demo/Run.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/observer/structure/IObserverable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/observer/structure/Obverser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/observer/structure/readMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/java/com/SourcebackendApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateAutoDefault.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateCustomize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateIncreatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateSquence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/java/com/tests/MyGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/java/com/tests/Repo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/java/com/tests/TestSave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/QueryExample/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/QueryExample/src/main/java/com/test/querys/SpringMainApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/QueryExample/src/main/java/com/test/querys/useexists/ExistsQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/QueryExample/src/main/java/com/test/querys/useexists/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/QueryExample/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/cleancodedemo/src/com/sharefullcode/cleancode/improve/ExtractVaribableDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/cleancodedemo/src/com/sharefullcode/cleancode/improve/HideDeligate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/cleancodedemo/src/com/sharefullcode/cleancode/improve/UnChangeValueInputOfMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/cleancodedemo/src/com/sharefullcode/cleancode/improve/factory_contructor_was_replace/Tree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/cleancodedemo/src/com/sharefullcode/cleancode/notuseif/Biscuit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/cleancodedemo/src/com/sharefullcode/cleancode/notuseif/Bread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/cleancodedemo/src/com/sharefullcode/cleancode/notuseif/IBakery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/cleancodedemo/src/com/sharefullcode/cleancode/notuseif/ProcessChoiceCake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascript/es6/semantic.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../javascript/es6/semantic.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/hibernate/DefiningEntities/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/hibernate/DefiningEntities/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/hibernate/EntityRelationships/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/hibernate/EntityRelationships/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1v29E6uFvevhMoQHZ3tYJw58ZUA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="application" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DemoSingleton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="application.DemoSingleton" />
+      <module name="singleton" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DemoSingleton" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1eb674a5-2bbc-44df-b65d-57705c246c92" name="Default Changelist" comment="" />
+      <created>1625749204705</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625749204705</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

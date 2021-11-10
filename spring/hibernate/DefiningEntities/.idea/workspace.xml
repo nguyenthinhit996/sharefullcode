@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b56af02e-3dd7-4945-807c-ce7201b714b8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/SourcebackendApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateAutoDefault.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateCustomize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateIncreatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateSquence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/MyGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/Repo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/java/com/tests/TestSave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateGeneratorID/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EntityRelationships/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EntityRelationships/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1ukOa9VEGEF1gNgDzjHeoVY5riP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="JUnit.HibernateLifecycleUnitTest.testUpdate">
+    <configuration name="HibernateLifecycleUnitTest.TransientEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hibernatebasic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hibernatebasic.B2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hibernatebasic.B2" />
+      <option name="MAIN_CLASS_NAME" value="hibernatebasic.B2.HibernateLifecycleUnitTest" />
+      <option name="METHOD_NAME" value="TransientEntity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HibernateLifecycleUnitTest.removeEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hibernatebasic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hibernatebasic.B2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hibernatebasic.B2" />
+      <option name="MAIN_CLASS_NAME" value="hibernatebasic.B2.HibernateLifecycleUnitTest" />
+      <option name="METHOD_NAME" value="removeEntity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HibernateLifecycleUnitTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hibernatebasic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hibernatebasic.B2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hibernatebasic.B2" />
+      <option name="MAIN_CLASS_NAME" value="hibernatebasic.B2.HibernateLifecycleUnitTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HibernateLifecycleUnitTest.testDetack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hibernatebasic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hibernatebasic.B2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hibernatebasic.B2" />
+      <option name="MAIN_CLASS_NAME" value="hibernatebasic.B2.HibernateLifecycleUnitTest" />
+      <option name="METHOD_NAME" value="testDetack" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HibernateLifecycleUnitTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hibernatebasic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hibernatebasic.B2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hibernatebasic.B2" />
+      <option name="MAIN_CLASS_NAME" value="hibernatebasic.B2.HibernateLifecycleUnitTest" />
+      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.HibernateLifecycleUnitTest.testUpdate" />
+        <item itemvalue="JUnit.HibernateLifecycleUnitTest.test" />
+        <item itemvalue="JUnit.HibernateLifecycleUnitTest.removeEntity" />
+        <item itemvalue="JUnit.HibernateLifecycleUnitTest.TransientEntity" />
+        <item itemvalue="JUnit.HibernateLifecycleUnitTest.testDetack" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b56af02e-3dd7-4945-807c-ce7201b714b8" name="Default Changelist" comment="" />
+      <created>1625206181375</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625206181375</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java</url>
+          <line>171</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java</url>
+          <line>137</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java</url>
+          <line>138</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
