@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CustomImplementLogger.iml" filepath="$PROJECT_DIR$/CustomImplementLogger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DemoApiLoggingWithLog4j2.iml" filepath="$PROJECT_DIR$/DemoApiLoggingWithLog4j2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DemoMultiModuleInProject.iml" filepath="$PROJECT_DIR$/DemoMultiModuleInProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DemoProjectSe9.iml" filepath="$PROJECT_DIR$/DemoProjectSe9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DemoUseProjectSE9.iml" filepath="$PROJECT_DIR$/DemoUseProjectSE9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Monetary.iml" filepath="$PROJECT_DIR$/Monetary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VagargsParameter.iml" filepath="$PROJECT_DIR$/VagargsParameter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonfeaturesse9.iml" filepath="$PROJECT_DIR$/commonfeaturesse9.iml" />
+    </modules>
+  </component>
+</project>

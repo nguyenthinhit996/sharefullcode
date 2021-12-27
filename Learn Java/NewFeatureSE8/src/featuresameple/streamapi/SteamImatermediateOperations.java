@@ -64,6 +64,8 @@ public class SteamImatermediateOperations {
 			personsList.stream().forEach(foreachCustom);
 			//personsList.sort(compareDecreaseByAgeIngoreBull);
 			List<Personz> newListSorted=  personsList.stream().sorted(compareDecreaseByAgeIngoreBull).collect(Collectors.toList());
+		 System.out.println("------------ Non List Sorted nullsLast--------------");
+		 personsList.forEach(foreachCustom);
 			System.out.println("------------ List Sorted nullsLast--------------");
 			newListSorted.forEach(foreachCustom);
 	 }

@@ -1,0 +1,83 @@
++ khác biệt arrow fucntion vs function tranditional
++ insert into array 
++ đồng bộ vs bất đồng bộ 
++ định nghĩa file jsx
+
+
++ hỏi tiếng anh
+
++ mức lương tối thiểu nhận được
+
+----------------- Sếp Tôn hỏi ----------------------
+Giới thiệu bản thân => lãnh chưa có thể làm pull time ko.
+
+Đi 1 vòng CV và vị trí làm việc.
+
+có đi làm ở đâu chưa. 
+
+-----------Javascript ----------------
+
+các khai báo biến ?
+khác nhau của khai báo biến ?
+tại sao phải sử dụng hoisting là điểm yếu của dùng var => mới dùng let.
+định nghĩa scope trong javascript? 
+
+sự khác nhau của 
+==  tương đối bằng
+=== tuyệt đối bằng
+
+check logic operator && || xem thêm các operator   =>> giá trị ra như thế nào.
+
+liệt kê falsy và truthy
+
+tham chiếu và tham trị trong javascript
+
+so sánh các giá trị trong javascript
+
+sử dụng spread cho người ứng cư viên check thử.
+
+
+promise hell, promies change
+
+-------------- ReactJs ----------------------
+
+Lifeclye của reactJs => sử dung functional không quan tâm lifeClyte
+props, state là gì.
+
+dependency trong useEffect : 
+khong truyền , mảng rỗng, có giá trị
+không truyền: rerender = > useffect vẫn vào
+mảng rỗng: chạy đúng 1 lần lúc initial 
+có giá trị: giá trị truyền vào có thay đổi sẽ vào useEffect.
+
+useMemon: dùng lại tráng rerender lại , khi 2 cái state khác nhau mới render.
+useContext: xem thêm
+
+
+mức lương mong muốn.
+
+có muốn hỏi team hay dự án không.
+
+Lời khuyên
+kĩ thuật: 
+tư duy logic: 
+giải pháp:
+tiếng anh: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="file://$USER_HOME$/Downloads/commons-lang3-3.11-bin/commons-lang3-3.11/commons-lang3-3.11.jar" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/Structure Project Module/InModule/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/Structure Project Module/InModule/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/Structure Project Module/InModule">
+      <sourceFolder url="file://$MODULE_DIR$/Structure Project Module/InModule/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="jdk" jdkName="JavaSE-9" jdkType="JavaSDK" />
+    <orderEntry type="module-library">
+      <library name="commons-lang3-3.11.jar">
+        <CLASSES>
+          <root url="file://$USER_HOME$/Downloads/commons-lang3-3.11-bin/commons-lang3-3.11/commons-lang3-3.11.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
