@@ -2,26 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="911fd774-3016-4b31-be76-1644ad4b21ae" name="Default Changelist" comment="update compare list">
-      <change afterPath="$PROJECT_DIR$/../../Design_pattern/factory/Demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_pattern/singleton/singleton.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lombok.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collectionsinJava/setInterface/DemoEqualAndHashcode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../javascript/es6/.idea/es6.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/DefiningEntities/hibernatebasic.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/EntityRelationships/relativeentity.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/PaginationandSorting/pagegingandsorting.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ListCollectionDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ListCollectionDemo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../clean code/cleancodedemo/src/com/sharefullcode/cleancode/improve/encapsulationcollection/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../clean code/cleancodedemo/src/com/sharefullcode/cleancode/improve/encapsulationcollection/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../javascript/es6/let.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../javascript/es6/let.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../spring/hibernate/DefiningEntities/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/hibernate/DefiningEntities/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../spring/hibernate/EntityRelationships/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/hibernate/EntityRelationships/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../spring/hibernate/inital data .txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/hibernate/inital data .txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/code/controlstatement/BreakAndContinueControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/code/controlstatement/IfControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/code/controlstatement/LoopControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/code/controlstatement/SwitchCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/code/defination/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/code/defination/ConvertDataType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/code/defination/Operator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/code/defination/Variables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/doc/defination/introduce.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/program/bacsic/CompareTwoNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/program/bacsic/FibonacciSeries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/program/bacsic/GenerateNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/program/bacsic/PrimeNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/program/bacsic/PrintASC2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/program/numbers/AutomorphicNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/program/numbers/NumberToWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/program/numbers/PetersonNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/program/numbers/ReverseNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../General/src/main/java/program/numbers/SunnyNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/collectionsinJava/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Design_pattern/factory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Design_pattern/factory/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/copies/collections/DemoCopyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/copies/collections/DemoCopyList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,19 +52,32 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/lombok.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.DemoEqualAndHashcode">
+  <component name="RunManager" selected="Application.Demo">
     <configuration name="CompareToArrayLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="collectionsinJava.listinterface.comparelist.CompareToArrayLists" />
       <module name="ListCollectionDemo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="collectionsinJava.listinterface.comparelist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collectionsinJava.Demo" />
+      <module name="ListCollectionDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collectionsinJava.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,9 +113,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Demo" />
+        <item itemvalue="Application.DemoCopyList" />
         <item itemvalue="Application.DemoEqualAndHashcode" />
         <item itemvalue="Application.CompareToArrayLists" />
-        <item itemvalue="Application.DemoCopyList" />
       </list>
     </recent_temporary>
   </component>

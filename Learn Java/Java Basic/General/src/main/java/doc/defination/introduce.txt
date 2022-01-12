@@ -1,0 +1,160 @@
+
+The document refer from page: https://www.javatpoint.com/java-tutorial
+
+Java is a programming language and a platform.
+Java is an object-oriented. class-based, concurrent, secured, general-purposed.
+Platform: Any hardware or software environment in which a program runs. it knows as a platform.
+Java has JRE (java runtime environment) and API, it is called a platform.
+
+Java can use apply into many places:
+Application Desktop: such as Acrobat reader, Media player, antivirus.
+Web Application: javatpoint.com, nasa, Wikipedia Search
+Enterprise Application: banking, production process.
+Mobile: Spotify, Twitter, Opera mini
+Embedded System
+Start Card
+Robotics
+Games: Minecraft
+
+-------------------------------------- Type of java -------------------------------------------------
+
+Type of java:
+
+Java SE (Standard Editor): Standard lone applications are also knows desktop application or window-based applications.
+It include java programming API such as java.io, java.lang, java.util, java.sql . It includes core topics OPPs, String,
+Regex, Exception, Inner classes, Multithreading, I/O Stream, Networking, AWT, Swing, Reflection, Collection, etc.
+
+Java EE (Enterprise Editor): It is an enterprise platform that is mainly used to develop web and enterprise application.
+it is build on top java SE. it include servlet, jsp, web services, JPA, ...
+
+Java ME(Java Micro Edition): It is micro platform serve for to mobile development.
+
+Java Fx:The GUI library it is used to develop rich internet application.  It can many devices such as desktop, web, phone, tivi, tablet.
+The Java Fx is can extend from Swing.
+
+#question: What is difference between JDK, JRE, JVM:
+
+JVM: this is an abstract machine. It is call virtual machine because not physical exists.
+It is a specification that provides a runtime environment in which java code can be executed.
+It can also run those programs which are written in other languages and complied to java bytecode.
+JVM action: Load Code, Verifies code, Execute code, Provides runtime environment.
+
+JRE: Java runtime environment, it is a set of software tools which are used for developing java application.
+contain JVM and some library + other files that JVM uses at runtime.
+
+JDK: Java Development Kit. it is a development environment which is used to develop java application and applets.
+It contain JRE + development tools + a few other resource such as an interpreter/loader (java), a compiler (javac),
+an archiver (jar) and a doc generator (javadoc).
+
+Heap vs stack:
+heap: lưu trữ biến primitive, biến (con trỏ) trỏ đến object lưu bên stack.
+Stack: thực sự lưu trưc biến reference, và string pool
+
+Version Java: đang sử dụng java 11 , new version là java march 18 2022
+
+-------------------------------------- Feature of java -------------------------------------------------
+
+Feature of java:
+
+Simple: it is very to learn, clean and easy to understand, java has removed many complicated and rarely-used feature.
+explicit pointer. We dont need to remove unreference object because there is an automatic Garbage Collection in java.
+
+Object oriented: Java is an oriented language programming. everything in java is an object.
+Object-oriented is meaning we organize our software as a combination of difference types of object that incorporate
+both data and behavior.
+
+OOP (object oriented programming) of java include below:
+Object:
+Class:
+Inheritance:
+Polymorphism:
+Abstraction:
+Encapsulation:
+
+Platform independent: Java is write once, run anywhere. Windown, Linux, MacOs.
+Java code can be executed on multiple platforms. Java code is complied by the compiler and converted into bytecode .
+this bytecode is a platform-independent code because it can be run multiple platforms.
+
+Secured: Java is best known for security. because:
+No explicit pointer, Java programs run inside a virtual machine sandbox
+,Classloader in java is a part of the java runtime environment, which is used to load java classes into the
+the java Virtual machine dynamically. It adds security by separating the package for the classes of the local
+file system form those that are imported from network sources.
+Bytecode verifier: It checks the code fragment for illegal code that can violate access rights to objects.
+Security Manager: It determines what resources a class can access such as reading and writing to the local disk.
+Example : c/c++ run directly on os environment whereas java run on JVM evn not os evn.
+
+Architecture-neutral: Java is architecture neutral because there are no implementation dependent feature, for example
+types is fixed.
+
+Portable: Java is portable because it facilities you to carry the java bytecode to any platform.
+
+High performance: Java is faster than other traditional interpreted programming language because the bytecode of java is close
+with native code. It is still a little bit slower than a complied language (c or c++). Java is an interpreted language that
+why it is slower than complied language like c c++.
+
+Distributed: Java is distributed because it facilitates users to create distributed application in java.
+RMI and EJB are used for creating distributed applications .this feature of java makes us able to access by calling the
+methods from any machine on the internet.
+
+Multi-threaded: A thread is like a separate program, executing concurrently. We can write java programs that deal with
+many tasks at once by defining multiple threads. The main of advantage of multi-threading is that it doesn't occupy
+memory for each thread. it shared a common memory area.
+
+Dynamic: Java is dynamic language. it supports the dynamic loading of classes. it mean classes are loaded on demand.
+supports functions for it native languages i.e C and C++.
+
+---------------------------------------------------------------------------------------
+Java is always pass-by-value
+
+
+--------------------------------------- Detail in run program ------------------------------------------------
+At complied:
+convert from file.java compiler to file.class
+
+At Runtime:
+class file -> classloader -> bytecode verified -> interpreted -> runtime -> hardware.
+classloader: It is a subsystem of JVM that is used to load class file.
+bytecode verified: Check the code fragment for illegal that can access right to object.
+Interpreter: Read bytecode stream then execute the instructions.
+
+
+#question: Can you save a java source file by another name than class name: yes if the class not public
+#question: Can have multi class in on file.java: yes
+
+---------------------------------------  Variable Java ------------------------------------------------
+there are three variables in java.
+local variable , instance variable, static variable.
+local variable : use in body of method and can not defined as static variable in case local variable.
+instance variable: use inside class but outside method and not declared with key static.
+it called instance variable because its value is instance-specific and is not shared among instances. static variable
+static variable: same way declared with instance variable but declared together with key static. we can shared
+variable among instances. memory allocation for static only one happens only once when the class is loaded.
+* notice: we can similar name local variable with instance and static, but
+in method will get localVariable.
+
+---------------------------------------  Data type Java ------------------------------------------------
+
+Have two data type in java:
+Primitive data types: boolean (1 byte) , char (1 byte), byte (1 byte),
+short (2 byte), int (4 byte), long(8 byte), float (4 byte), double(8 byte).
+Non primitive data types: non primitive data type and String, classes, interfaces, arrays.
+
+Primitive Default and min max value:
+
+1 byte = 8 bit
+1 bit it aware sinal (dấu âm hoặc dương).
+khi max phải trừ đi 1 số vì trừ đi 1 con sô đó là số 0.
+
+                    default             min                 max
+ boolean (1 byte):  false               -                   -
+ char (1 byte)   :  '\u0000' (null)
+ byte (1 byte)   :  0   2^7=-128                            2^7 = 128 - 1 (subtract - zero) = 127
+short (2 byte)   :  0   2^15=-32,768                        2^15 -1 = 32,767
+int (4 byte)     :  0   2^31=- 2,147,483,648                2^31 -1 = 2,147,483,647
+ long(8 byte)    :  0   2^63=-9,223,372,036,854,775,808     2^63 - 1 = 9,223,372,036,854,775,807
+ float (4 byte)  :  0   single precision 32 bit
+ double(8 byte)  :  0   double precision 64 bit
+
+------------------------ Operator -------------------------
+Unary (toán tử 1 ngôi)

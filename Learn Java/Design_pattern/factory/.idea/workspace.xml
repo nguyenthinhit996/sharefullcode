@@ -2,70 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75495fc1-0150-476f-b25f-a03f9dee5bce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/application/types/astractFactories/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/types/astractFactories/factorys/AbstractFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/types/astractFactories/factorys/AnimalFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/types/astractFactories/model/animals/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/types/astractFactories/model/animals/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/types/astractFactories/model/animals/IAnimal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/types/factorymethod/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/types/factorymethod/MethodFactoryConcrete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/types/factorymethod/RegistryFactoryConcrete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/types/factorymethod/model/Bike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/types/factorymethod/model/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/types/factorymethod/model/EnumVehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/types/factorymethod/model/Motor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/types/factorymethod/model/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../singleton/src/application/DemoSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../singleton/src/application/types/EarlySingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../singleton/src/application/types/LazySingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/creational/factory/astractfactory/functionfactoryvehiclewater/RegistryVehicleWaterFactoryReflection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/creational/factory/astractfactory/functionfactoryvehiclewater/model/Cano.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/creational/factory/astractfactory/functionfactoryvehiclewater/model/IVehicleWater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/creational/factory/astractfactory/functionfactoryvehiclewater/model/Ship.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/creational/factory/astractfactory/main/AbstractFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/creational/factory/astractfactory/main/RegistryFunctionFactoryNonReflection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/creational/factory/astractfactory/main/Run.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/creational/factory/fucntionfactoryvehicleroad/RegistryFactoryAvoidReflection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/creational/factory/fucntionfactoryvehicleroad/RegistryVehicleRoadFactoryReflection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/creational/factory/fucntionfactoryvehicleroad/Run.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/creational/factory/fucntionfactoryvehicleroad/model/Bike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/creational/factory/fucntionfactoryvehicleroad/model/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/creational/factory/fucntionfactoryvehicleroad/model/EnumVehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/creational/factory/fucntionfactoryvehicleroad/model/Motor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/creational/factory/fucntionfactoryvehicleroad/model/VehicleRoad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/creational/factory/readMe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/observer/demo/Run.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/observer/structure/IObserverable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/observer/structure/Obverser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../designpattern/src/pattern/observer/structure/readMe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/java/com/SourcebackendApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateAutoDefault.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateCustomize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateIncreatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateSquence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/java/com/tests/DateWorkEntityGenerateTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/java/com/tests/MyGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/java/com/tests/Repo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/java/com/tests/TestSave.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/HibernateGeneratorID/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/QueryExample/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/QueryExample/src/main/java/com/test/querys/SpringMainApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/QueryExample/src/main/java/com/test/querys/useexists/ExistsQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/QueryExample/src/main/java/com/test/querys/useexists/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/QueryExample/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/cleancodedemo/src/com/sharefullcode/cleancode/improve/ExtractVaribableDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/cleancodedemo/src/com/sharefullcode/cleancode/improve/HideDeligate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/cleancodedemo/src/com/sharefullcode/cleancode/improve/UnChangeValueInputOfMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/cleancodedemo/src/com/sharefullcode/cleancode/improve/factory_contructor_was_replace/Tree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/cleancodedemo/src/com/sharefullcode/cleancode/notuseif/Biscuit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/cleancodedemo/src/com/sharefullcode/cleancode/notuseif/Bread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/cleancodedemo/src/com/sharefullcode/cleancode/notuseif/IBakery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../spring/hibernate/cleancodedemo/src/com/sharefullcode/cleancode/notuseif/ProcessChoiceCake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../javascript/es6/semantic.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../javascript/es6/semantic.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../spring/hibernate/DefiningEntities/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/hibernate/DefiningEntities/src/test/java/hibernatebasic/B2/HibernateLifecycleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../spring/hibernate/EntityRelationships/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/hibernate/EntityRelationships/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/code/controlstatement/BreakAndContinueControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/code/controlstatement/IfControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/code/controlstatement/LoopControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/code/controlstatement/SwitchCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/code/defination/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/code/defination/ConvertDataType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/code/defination/Operator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/code/defination/Variables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/doc/defination/introduce.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/program/bacsic/CompareTwoNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/program/bacsic/FibonacciSeries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/program/bacsic/GenerateNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/program/bacsic/PrimeNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/program/bacsic/PrintASC2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/program/numbers/AutomorphicNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/program/numbers/NumberToWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/program/numbers/PetersonNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/program/numbers/ReverseNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Basic/General/src/main/java/program/numbers/SunnyNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +49,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../clean code" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java Basic/ListCollection" />
   </component>
   <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">

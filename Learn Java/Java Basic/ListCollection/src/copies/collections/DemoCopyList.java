@@ -155,13 +155,13 @@ public class DemoCopyList {
 	 * @param listOriginal
 	 */
 	static void demoCopyAfterThatDeleteElement(List<User> listOriginal ) {
-		User tempLast = null;
-		List<User> listTemp = new ArrayList<>();
-		for(User s : listOriginal){
-			listTemp.add(s);
-			tempLast = s;
-		}
 
+		List<User> listTemp = new ArrayList<>(listOriginal);
+//		for(User s : listOriginal){
+//			listTemp.add(s);
+//			tempLast = s;
+//		}
+		User tempLast = listTemp.get(listTemp.size()-1);
 		System.out.println("List has just copied");
 		System.out.println(listTemp);
 		System.out.println("User last of list");
@@ -170,8 +170,8 @@ public class DemoCopyList {
 		System.out.println("++++++++++++ Remove it ++++++++++++==");
 		tempLast.setName("changessssss ");
 		listTemp.remove(tempLast);
-		User sss = listTemp.get(0);
-		sss.setName("change from copied list");
+//		User sss = listTemp.get(0);
+//		sss.setName("change from copied list");
 
 
 		System.out.println("List has just copied");
@@ -186,7 +186,7 @@ public class DemoCopyList {
 	public static void main(String[] args) {
 		DemoCopyList demoCopyList = new DemoCopyList();
 		List<User> listOriginal = demoCopyList.listOriginal;
-		demoCopyList.copyListByContructor(listOriginal);
+//		demoCopyList.copyListByContructor(listOriginal);
 		demoCopyAfterThatDeleteElement(listOriginal);
 	}
 }
