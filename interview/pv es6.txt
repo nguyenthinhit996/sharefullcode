@@ -1,0 +1,40 @@
+*** let, var, const:
+
+let: phải khai báo trước khi sử dụng nếu không nó error,
+var: cơ chế hosting luôn đưa về đầu cho khai báo nên sẽ đầu scope.
+const: không gan lại giá trị ban đầu. không gán lại bộ nhớ.
+
+
+
+**** sự khác nhau của var và const và let
+đối với mệnh đề if chỉ có var là sẽ ảnh hưởng ra bên ngoài, const và let đều không dc
+đối với function thì cả 3 đều không ảnh hưởng bên ngoài.
+
+vd1:
+if(true){
+ var vari = 13;
+ const con = 14;
+ let lets = 15;
+}
+//console.log(vari);  
+//console.log(con); 
+//console.log(lets);
+
+function abc(){
+ var vari2 = 13;
+ const con2 = 14;
+ let lets2 = 15;
+}
+//console.log(vari2); 
+//console.log(con2); 
+//console.log(lets2);
+
+*** const 
+const arr1 = [12,23,343];
+const arr2 = [0,2,2];
+//arr1[0] = 111; // is that wrong ?
+//arr1 = arr2; // is that wrong ?
+//console.log(arr1)
+
+
+

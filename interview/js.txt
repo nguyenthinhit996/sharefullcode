@@ -1,65 +1,342 @@
-+ khác biệt arrow fucntion vs function tranditional
-+ insert into array 
-+ đồng bộ vs bất đồng bộ 
-+ định nghĩa file jsx
+
+Phỏng vấn em vào vị trí Font end
+
+Gồm 3 phần: 
+
+javascript 
+
+reactjs
+
+phỏng vấn tiếng anh. 
 
 
-+ hỏi tiếng anh
 
-+ mức lương tối thiểu nhận được
-
------------------ Sếp Tôn hỏi ----------------------
-Giới thiệu bản thân => lãnh chưa có thể làm pull time ko.
+----------------- hỏi bản thân ----------------------
+Giới thiệu bản thân => có thể làm pull time ko.
 
 Đi 1 vòng CV và vị trí làm việc.
 
-có đi làm ở đâu chưa. 
+Có đi làm ở đâu chưa. 
 
 -----------Javascript ----------------
 
-các khai báo biến ?
+Các khai báo biến ?
+(var - let - const)
+Lưu ý: Đối với các phiên bản trước ES6 thì chỉ có từ khóa var thôi nhé.
+Vì vậy, với những trình duyệt quá cũ thì không sử dụng được let và const.
+
+ -----------------------------------
 khác nhau của khai báo biến ?
-tại sao phải sử dụng hoisting là điểm yếu của dùng var => mới dùng let.
+Cơ chế hoisting ? là điểm yếu của dùng var 
+Trong JavaScript, hoisting là việc đưa các khai báo biến lên phần đầu tiên của phạm vi mà biến được sử dụng.
+ => mới dùng let.
+
 định nghĩa scope trong javascript? 
+phạm vi truy cập, đề cập đến ngữ cảnh của đoạn code.
+
+Global Scope : cos thể xung đột namespace.
+Local scope : phạm vi truy cập cục bộ (local scope) của riêng nó trong function chẳn hạn
+
+ // global scope
+var global = 'global scope';
+
+ //  Local scope in here
+var myFunction = function () {
+  var local = 'global scope';
+  console.log(local);
+};
+//what is ouput?
+//console.log(global);
+//console.log(local);
+
+****
+//cau hoi kho
+function b() {
+  console.log(text);
+}
+ 
+function a() {
+  var text = "in a";
+  b();
+}
+ 
+a();
+var text = "in gloal";
+
+=>> xuat ra undefined
+ Trong function b không có biến text, 
+do vậy nó sẽ ngược lên scope cha để tìm biến text.
+ Tuy dòng khai báo text nằm ở cuối cùng, tuy nhiên do hoisting trong Js,
+nên mọi khai báo sẽ được chuyển lên đầu scope:
+
+-----------------------------
+Khác nhau của == vs === ?
+
+//console.log(3 == "3"); 
+//console.log(3 === "3");
 
 sự khác nhau của 
-==  tương đối bằng
-=== tuyệt đối bằng
+==  tương đối bằng ,  so sánh trừu tượng, nó parse ra giá trị mới so sánh
+=== tuyệt đối bằng, so sánh cân bằng nghiêm ngặt
+
+-----------------------------------
+Em có biết falsy , truthy?
+
+Liệt kê falsy và truthy?
+
+falsy: 
+    false
+    0
+    -0
+    ""
+    null
+    undefined
+    NaN
+truthy: không nằm trong falsy: 
+
+Cho biết kết quả của 2 phép toán: 
+
+const pets = [1,3,4];
+const character = undefined;
+var flag = 0;
+var flag2 = 0;
+if (pets.length > 0) {
+  flag++;
+}
+if (pets.length) {
+  flag++;
+
+}
+//console.log(flag);
+
+if (undefined === character) {
+   flag2++;
+}
+if (!character) {
+  flag2++;
+}
+// console.log(flag2);
+
+---------------------------------------
+Toán tử && ||
+
+&& tất cả true sẽ true, trả về flase ngần nhất
+|| trả về true gần nhất, ko thì lấy giá trị cuối cùng.
 
 check logic operator && || xem thêm các operator   =>> giá trị ra như thế nào.
 
-liệt kê falsy và truthy
+var variable;
+variable = true && true && true;
+//console.log("true && true && true => " + variable);
+variable = false || true || false;
+//console.log("false || true || false => " + variable);
 
-tham chiếu và tham trị trong javascript
+variable = (4 > 2) && (10 < 15);
+//console.log(" (4 > 2) && (10 < 15) => " + variable);
 
-so sánh các giá trị trong javascript
+variable = true && null && undefined;
+//console.log(" true && null && undefined => " + variable);
 
-sử dụng spread cho người ứng cư viên check thử.
+variable = false || undefined || null;
+//console.log("false || undefined || null => " + variable);
+
+------------------------
+E có nghe tham chiếu và tham trị trong javascript ?
+Truyền tham trị (kiểu dữ liệu nguyên thủy (String, number hoặc boolen) 
+không có tư khóa new chỉ let abc, hoặc var hoặc const thôi): ko thay đổi giá trị khi truyền vào 
+
+function call1(varOne, varTwo) { 
+  console.log("Inside Call by Value Method"); 
+  varOne = 100; 
+  varTwo = 200; 
+  //console.log("varOne = " + varOne +" varTwo =" +varTwo); 
+} 
+let varOne = 10; 
+let varTwo = 20; 
+console.log("Before Call by Value Method"); 
+console.log("varOne =" + varOne +"varTwo =" +varTwo); 
+//call1(varOne, varTwo) ;
+//console.log("After Call by Value Method"); 
+//console.log("varOne =" + varOne +"varTwo =" +varTwo); 
+
+Truyền tham chiếu (truyền đối tượng hoặc mảng ): thì sẽ bị ảnh hưởng bởi xử lí bên trong function 
+
+function call2(varObj) { 
+  console.log("Inside Call by Reference Method"); 
+  varObj.a = 100; 
+  //console.log(varObj); 
+} 
+let varObj = {a:1}
+console.log("Before Call by Reference Method"); 
+console.log(varObj);
+//call2(varObj) 
+//console.log("After Call by Reference Method"); 
+//console.log(varObj);
+
+---------------------
+SO sánh các giá trị trong javascript
+** primitive : 
+let a = 10;
+let b = 10;
+//console.log(a === b);
 
 
-promise hell, promies change
+** Object, new String, new Number, new Boolean.
+let a = new Number(4);
+let a2 = a ;
+let a3 = new Number(4);
+
+//console.log(a === a2);
+//console.log(a === a3);
+//console.log(JSON.stringify(a) === JSON.stringify(a3));
+
+** Array, object deep dùng 
+Lodash 
+
+----------------------
+Thuật ngữ spread ??? Es6 
+
+const point = {
+    x: 10,
+    y: 20,
+};
+
+const pointI3D = {
+   x: 0,
+   z: 100,
+   ...point,
+};
+  
+//console.log(pointI3D);
+
+------------------------------
+Tính toán ?
+
+function findMinSecond() {
+   const arr = [5,3,6,2,62,22];
+   //out put 3;
+
+
+}
+
+findMinSecond();
+
+-----------
+  var min1 = min2 = arr[0];
+  for(var i = 0; i< arr.length; i++){
+    if(min1 > arr[i]){
+      min2 = min1;
+      min1 = arr[i];
+    }
+  }
+ console.log(min2);
+
 
 -------------- ReactJs ----------------------
+Bài tập nhỏ
+https://playcode.io/jsx/
 
-Lifeclye của reactJs => sử dung functional không quan tâm lifeClyte
-props, state là gì.
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-dependency trong useEffect : 
-khong truyền , mảng rỗng, có giá trị
-không truyền: rerender = > useffect vẫn vào
-mảng rỗng: chạy đúng 1 lần lúc initial 
-có giá trị: giá trị truyền vào có thay đổi sẽ vào useEffect.
+const actionAddProduct = () => {
+  // some actions here
+  console.log('added');
+};
+
+const PageUser = () => {
+  const add = () => {};
+  return (
+    <>
+      <button onClick={add}> Buy Product </button>
+    </>
+  );
+};
+ReactDOM.render(<PageUser />, document.getElementById('root'));
+
+-----------------
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const actionAddProduct = () => {
+  console.log('added');
+};
+
+const PageUser = ({ handleAddProduct }) => {
+  const addItem = () => {
+    handleAddProduct();
+  };
+  return (
+    <>
+      <button onClick={addItem}> Buy Product </button>
+    </>
+  );
+};
+ReactDOM.render(
+  <PageUser handleAddProduct={actionAddProduct} />,
+  document.getElementById('root')
+);
+
+
+sử dụng reactHook không: 
+
+    Basic Hooks
+        useState: theo dõi & cập nhật lại UI thôi khi giá trị useState thay đổi bằng hàm setState.
+        useEffect: lắng nghe sự thay đổi của input rồi thực hiện theo ý muốn của mình 
+		dependency trong useEffect : 
+		khong truyền , mảng rỗng, có giá trị
+		không truyền: rerender = > useffect vẫn vào
+		mảng rỗng: chạy đúng 1 lần lúc initial 
+		có giá trị: giá trị truyền vào có thay đổi sẽ vào useEffect.
+        useContext: get lại giá trị từ component cha được bao bọc trong provider tag.
+
+    Additional Hooks
+        useReducer
+        useCallback
+        useMemo
+        useRef
+        useImperativeHandle
+        useLayoutEffect
+        useDebugValue
+
+
+
 
 useMemon: dùng lại tráng rerender lại , khi 2 cái state khác nhau mới render.
 useContext: xem thêm
 
 
-mức lương mong muốn.
+
+-----------------------------------------------------------
+Phỏng vấn tiếng anh. 
+
+Tell me a little about yourself. habbit, music. 
+what song you love
+
+Could you please let me know about your education? .what is your degree?
+
+What do you do for your free time? 
+
+
+
+ki thuat 7 , 
+vẫn còn lẫn lộn true, false.
+tieng anh tot
+
+
+mức lương mong muốn. 
+Pv: min: 8 tr.
+
 
 có muốn hỏi team hay dự án không.
+tech font end. 
+java 8.
+
 
 Lời khuyên
-kĩ thuật: 
+kĩ thuật: tốt 7
+javascript :
 tư duy logic: 
 giải pháp:
 tiếng anh: 
